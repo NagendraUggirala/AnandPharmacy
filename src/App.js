@@ -41,16 +41,15 @@ import AddressManager from "./pages/Profile/AddressManager";
 // 🔐 PROTECTED ROUTE WRAPPER
 // ====================================================================
 const ProtectedRoute = ({ children }) => {
-  const { user } = useContext(AuthContext);
-  const location = useLocation();
+  const user = localStorage.getItem("user");
 
-  // not logged in → redirect to login
   if (!user) {
-    return <Navigate to="/login" replace state={{ from: location }} />;
+    return <Navigate to="/login" replace />;
   }
 
   return children;
 };
+
 
 // ====================================================================
 // 🌐 MAIN APP

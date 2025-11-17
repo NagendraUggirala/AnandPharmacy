@@ -9,15 +9,21 @@ import HeaderToggleMenu from "./HeaderToggleMenu";
 import CategorySlider from "./CategorySlider";
 import CartBadge from "./CartBadge";
 import PrescriptionToggle from "./PrescriptionToggle";
+import Login from "../../pages/Auth/Login"; 
 import { getHeaderData } from "../../api/headerService";
 
 const Header = () => {
   const navigate = useNavigate();
+
   const [menuOpen, setMenuOpen] = useState(false);
+  const [loginOpen, setLoginOpen] = useState(false);
+  const [profileOpen, setProfileOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   const [cartCount, setCartCount] = useState(0);
   const [logo, setLogo] = useState("");
 
-  // Fetch Logo from API
+  /* ---------------- FETCH LOGO ---------------- */
   useEffect(() => {
     (async () => {
       const d = await getHeaderData();
@@ -25,45 +31,59 @@ const Header = () => {
     })();
   }, []);
 
-  // Load Cart Count
+  /* ---------------- CART COUNT ---------------- */
   useEffect(() => {
     const cart = JSON.parse(localStorage.getItem("pharmacy_cart")) || [];
     setCartCount(cart.length);
   }, []);
 
-  // Live Cart Sync
   useEffect(() => {
-    const onStorage = () => {
+    const onUpdate = () => {
       const cart = JSON.parse(localStorage.getItem("pharmacy_cart")) || [];
       setCartCount(cart.length);
     };
-    window.addEventListener("storage", onStorage);
-    return () => window.removeEventListener("storage", onStorage);
+    window.addEventListener("storage", onUpdate);
+    return () => window.removeEventListener("storage", onUpdate);
   }, []);
 
+  /* ---------------- LOGIN CHECK ---------------- */
+  useEffect(() => {
+    const user = localStorage.getItem("user");
+    setIsLoggedIn(!!user);
+  }, []);
+useEffect(() => {
+  const onStorage = () => {
+    const user = localStorage.getItem("user");
+    setIsLoggedIn(!!user);
+  };
+  window.addEventListener("storage", onStorage);
+  return () => window.removeEventListener("storage", onStorage);
+}, []);
+useEffect(() => {
+  const u = localStorage.getItem("user");
+  setIsLoggedIn(!!u);
+}, []);
+
+  /* ---------------- RENDER HEADER ---------------- */
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
+      <header className="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
 
-        {/* ---------------- DESKTOP HEADER ---------------- */}
-        <div className="hidden lg:flex items-center max-w-10lg mx-auto px-4 py-3 justify-between">
-          
+        {/* ===== DESKTOP ===== */}
+        <div className="hidden lg:flex items-center justify-between px-4 py-3">
+
           {/* Logo */}
           <div
             className="flex items-center gap-3 cursor-pointer"
             onClick={() => navigate("/")}
           >
-            <img 
-              src={logo || "/assets/logo/nandi-flag.png"} 
-              alt="logo" 
+            <img
+              src={logo || "/assets/logo/nandi-flag.png"}
               className="w-10 h-10 rounded"
+              alt="logo"
             />
-
-            {/* ❗ Updated Heading */}
-            <div className="hidden xl:block">
-              <div className="font-semibold text-orange-600 text-lg">
-                Anand Pharmacy
-              </div>
+            <div className="font-semibold text-orange-600 text-lg">
+              Anand Pharmacy
             </div>
           </div>
 
@@ -72,20 +92,67 @@ const Header = () => {
             <SearchBar />
           </div>
 
-          {/* Right Buttons */}
+          {/* Right Items */}
           <div className="flex items-center gap-4">
+
             <LocationSelector />
 
-            <button
-              className="hidden xl:flex items-center gap-2 text-gray-700 hover:text-orange-600"
-              onClick={() => navigate("/login")}
-            >
-              <FiUser size={18} />
-              <span className="text-sm">Login</span>
-            </button>
+            {/* LOGIN / PROFILE */}
+            
+           {/* LOGIN / PROFILE AREA */}
+{!isLoggedIn ? (
+  <button
+    onClick={() => navigate("/login")}
+    className="flex items-center gap-2"
+  >
+    <FiUser size={20} />
+    Login
+  </button>
+) : (
+  <div className="relative">
+    <button
+      onClick={() => setProfileOpen(!profileOpen)}
+      className="flex items-center gap-2 bg-gray-100 px-3 py-1.5 rounded-md"
+    >
+      <FiUser size={20} className="text-orange-600" />
+      Profile
+    </button>
 
+    {profileOpen && (
+      <div className="absolute right-0 mt-2 w-44 bg-white shadow-md border rounded-md z-50">
+        <button
+          onClick={() => navigate("/profile")}
+          className="w-full text-left px-4 py-2 hover:bg-orange-50"
+        >
+          My Account
+        </button>
+
+        <button
+          onClick={() => navigate("/orders")}
+          className="w-full text-left px-4 py-2 hover:bg-orange-50"
+        >
+          My Orders
+        </button>
+
+        <button
+          onClick={() => {
+            localStorage.removeItem("user");
+            setIsLoggedIn(false);
+            setProfileOpen(false);
+            navigate("/");
+          }}
+          className="w-full text-left px-4 py-2 text-red-500 hover:bg-red-50"
+        >
+          Logout
+        </button>
+      </div>
+    )}
+  </div>
+)}
+
+            {/* Cart */}
             <div className="relative">
-              <button onClick={() => navigate("/cart")} className="text-gray-800">
+              <button onClick={() => navigate("/cart")}>
                 <FiShoppingCart size={22} />
               </button>
               <CartBadge count={cartCount} />
@@ -95,67 +162,66 @@ const Header = () => {
           </div>
         </div>
 
-        {/* ---------------- MOBILE + TABLET HEADER ---------------- */}
-        <div className="lg:hidden px-4 py-2">
-          <div className="flex items-center justify-between">
+        {/* ===== MOBILE HEADER ===== */}
+        <div className="lg:hidden px-4 py-2 flex items-center justify-between">
 
-            {/* Left Side - Logo */}
-            <div className="flex items-center gap-3">
-              <img
-                src={logo || "/assets/logo/nandi-flag.png"}
-                alt="logo"
-                className="w-10 h-10 rounded"
-                onClick={() => navigate("/")}
-              />
-            </div>
+          {/* Logo */}
+          <img
+            src={logo || "/assets/logo/nandi-flag.png"}
+            className="w-10 h-10 rounded cursor-pointer"
+            onClick={() => navigate("/")}
+            alt="logo"
+          />
 
-            {/* Right Side - Profile + Cart + Scanner */}
-            <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4">
 
-              {/* Login */}
-              <button onClick={() => navigate("/login")} className="p-2">
-                <FiUser size={22} />
+            {/* LOGIN / PROFILE */}
+            {!isLoggedIn ? (
+              <button onClick={() => navigate("/login")}>
+                <FiUser size={24} />
               </button>
-
-              {/* Scanner – replaces menu icon */}
-              <button 
-                onClick={() => setMenuOpen(true)}
-                className="p-2 bg-orange-100 rounded-full"
-              >
-                <FiCamera size={22} className="text-orange-600" />
+            ) : (
+              <button onClick={() => navigate("/profile")}>
+                <FiUser size={24} className="text-orange-600" />
               </button>
+            )}
 
-              {/* Cart */}
-              <div className="relative">
-                <button onClick={() => navigate("/cart")}>
-                  <FiShoppingCart size={22} />
-                </button>
-                <CartBadge count={cartCount} />
-              </div>
+            {/* Scanner */}
+            <button
+              className="p-2 bg-orange-100 rounded-full"
+              onClick={() => setMenuOpen(true)}
+            >
+              <FiCamera size={22} className="text-orange-600" />
+            </button>
 
+            {/* Cart */}
+            <div className="relative">
+              <button onClick={() => navigate("/cart")}>
+                <FiShoppingCart size={24} />
+              </button>
+              <CartBadge count={cartCount} />
             </div>
-          </div>
-
-          {/* Mobile Search */}
-          <div className="mt-3">
-            <SearchBar mobile />
           </div>
         </div>
 
-        {/* Category Slider */}
-        <div className="mt-2">
-          <CategorySlider />
-        </div>
+        {/* Category */}
+        <CategorySlider />
+
       </header>
 
-      {/* Push page content down */}
-      <div className="h-[120px] lg:h-[80px]" />
+      {/* PUSH PAGE */}
+      <div className="h-[120px] lg:h-[85px]" />
 
-      {/* Toggle Menu */}
-      <HeaderToggleMenu 
-        menuOpen={menuOpen} 
-        closeMenu={() => setMenuOpen(false)} 
+      {/* MOBILE MENU */}
+      <HeaderToggleMenu
+        menuOpen={menuOpen}
+        closeMenu={() => setMenuOpen(false)}
       />
+
+      {/* LOGIN POPUP (if used anywhere) */}
+      {loginOpen && (
+        <Login onClose={() => setLoginOpen(false)} />
+      )}
     </>
   );
 };
