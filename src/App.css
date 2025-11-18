@@ -695,3 +695,15 @@ header {
 .otp-popup .close-mini:hover {
   color: black;
 }
+
+
+/* Fix gap below fixed header */
+.home-wrapper {
+  padding-top: 130px;     /* for mobile */
+}
+
+@media (min-width: 1024px) {
+  .home-wrapper {
+    padding-top: 100px;   /* for desktop */
+  }
+}
