@@ -1,4 +1,3 @@
-// src/components/Header/CategorySlider.jsx
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -28,13 +27,12 @@ export default function CategorySlider() {
   const goToCategory = (cat) => {
     setActive(cat.id);
     const slug = cat.name.toLowerCase().replace(/\s+/g, "-");
-    navigate(`/home?category=${slug}`);
+    navigate(`/home/${slug}`);
   };
 
   return (
     <div className="w-full bg-white border-b py-2 shadow-sm">
 
-      {/* DESKTOP: centered, no scroll | MOBILE: scrollable, no visible scrollbar */}
       <div
         className="
           flex items-center gap-5 px-4 
@@ -58,7 +56,6 @@ export default function CategorySlider() {
                 ${active === cat.id ? "opacity-100 scale-105" : "opacity-70 group-hover:opacity-100"}
               `}
             />
-
             <span
               className={`
                 text-[13px] leading-tight
