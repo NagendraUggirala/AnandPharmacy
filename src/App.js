@@ -67,8 +67,13 @@ const App = () => {
       {/* ROUTES */}
       <Routes>
         {/* HOME */}
-        <Route path="/" element={ 
-          <Home />} />
+  
+        {/* When opening http://localhost:3000 redirect to /home/all */}
+        <Route path="/" element={<Navigate to="/home/all" replace />} />
+
+        {/* Home Main Route */}
+        <Route path="/home/*" element={<Home />} />
+
 
         {/* PRODUCT LIST + DETAILS */}
         <Route path="/products" element={<ProductList />} />
