@@ -1,113 +1,35 @@
 // src/components/Header/SearchBar.jsx
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { FiSearch, FiCamera } from "react-icons/fi";
 import Webcam from "react-webcam";
 import { useNavigate } from "react-router-dom";
 
-const videoConstraints = {
-  facingMode: "environment", // mobile back camera + laptop default camera
-};
+const videoConstraints = { facingMode: "environment" };
 
-const SearchBar = ({ mobile = false }) => {
+const SearchBar = () => {
   const [q, setQ] = useState("");
   const [openCam, setOpenCam] = useState(false);
+  const webcamRef = useRef(null);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const id = setTimeout(() => {
-      if (q.length > 1) {
-        // Suggestion API placeholder
-      }
-    }, 300);
-    return () => clearTimeout(id);
-  }, [q]);
-
   const onSubmit = (e) => {
-    e?.preventDefault();
-    if (!q) return;
+    e.preventDefault();
+    if (!q.trim()) return;
     navigate(`/products?search=${encodeURIComponent(q)}`);
   };
 
-  // 🔥 Capture image from webcam
-  const handleCapture = (webcamRef) => {
+  const handleCapture = () => {
     const img = webcamRef.current.getScreenshot();
-    console.log("Captured Image:", img);
+    console.log("Captured:", img);
     setOpenCam(false);
-    alert("Image captured (processing will be added later)");
   };
 
-  // Webcam Reference
-  const webcamRef = React.useRef(null);
-
-  // ------------------- MOBILE SEARCH BAR -------------------
-  if (mobile) {
-    return (
-      <>
-        {/* 📸 CAMERA MODAL */}
-        {openCam && (
-          <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-            <div className="bg-white rounded-md p-4 w-[90%] max-w-md text-center">
-              <Webcam
-                ref={webcamRef}
-                screenshotFormat="image/jpeg"
-                videoConstraints={videoConstraints}
-                className="rounded-lg w-full"
-              />
-
-              <button
-                onClick={() => handleCapture(webcamRef)}
-                className="bg-green-600 text-white px-4 py-2 rounded-lg mt-3 w-full"
-              >
-                Capture
-              </button>
-
-              <button
-                onClick={() => setOpenCam(false)}
-                className="bg-gray-500 text-white px-4 py-2 rounded-lg mt-2 w-full"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        )}
-
-        {/* SEARCH BAR UI */}
-        <form onSubmit={onSubmit} className="flex gap-2 items-center w-full">
-          <div className="flex-1 bg-white p-2 rounded-full flex items-center shadow-sm border border-gray-200">
-
-            <FiSearch className="text-gray-400 text-sm" />
-
-            <input
-              className="ml-2 w-full outline-none text-sm"
-              placeholder="Search medicines & health items"
-              value={q}
-              onChange={(e) => setQ(e.target.value)}
-            />
-
-            <button type="button" onClick={() => setOpenCam(true)}>
-              <FiCamera className="text-gray-400 text-base" />
-            </button>
-          </div>
-
-          <button
-            type="submit"
-            className="hidden sm:block bg-orange-600 text-white px-3 py-1.5 text-sm rounded-md"
-          >
-            Go
-          </button>
-        </form>
-      </>
-    );
-  }
-
-  // ------------------- DESKTOP SEARCH BAR -------------------
   return (
     <>
-      {/* 📸 CAMERA POPUP */}
+      {/* CAMERA POPUP */}
       {openCam && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
-          <div className="bg-white rounded-md p-4 w-[400px] text-center">
-
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-[999]">
+          <div className="bg-white rounded-xl p-4 w-[90%] max-w-sm text-center shadow-xl">
             <Webcam
               ref={webcamRef}
               screenshotFormat="image/jpeg"
@@ -116,7 +38,7 @@ const SearchBar = ({ mobile = false }) => {
             />
 
             <button
-              onClick={() => handleCapture(webcamRef)}
+              onClick={handleCapture}
               className="bg-green-600 text-white px-4 py-2 rounded-lg mt-3 w-full"
             >
               Capture
@@ -128,28 +50,60 @@ const SearchBar = ({ mobile = false }) => {
             >
               Close
             </button>
-
           </div>
         </div>
       )}
 
-      {/* DESKTOP SEARCH BAR UI */}
+      {/* SEARCH BAR */}
       <form onSubmit={onSubmit} className="w-full">
-        <div className="bg-gray-100 rounded-md px-3 py-1.5 flex items-center border border-gray-300">
+        <div
+          className="
+            flex items-center w-full
 
-          <FiSearch size={15} className="text-gray-500" />
+            /* MOBILE */
+            bg-white border border-gray-200 rounded-full px-4 py-3 shadow-sm
+            h-[50px]
 
+            /* DESKTOP */
+            lg:bg-gray-100 lg:border-gray-300 lg:rounded-md
+            lg:shadow-none lg:h-[42px] lg:px-4 lg:py-2
+          "
+        >
+          {/* Search Icon */}
+          <FiSearch
+            className="
+              text-gray-400 text-lg
+              lg:text-sm lg:text-gray-500
+            "
+          />
+
+          {/* Input */}
           <input
-            className="ml-3 w-full bg-transparent outline-none text-sm"
-            placeholder="Search medicines, brands, health products"
+            className="
+              w-full ml-3 bg-transparent outline-none
+              text-[13px] lg:text-[14px]
+            "
+            placeholder="Search medicines & health items"
             value={q}
             onChange={(e) => setQ(e.target.value)}
           />
 
+          {/* Camera Icon in a small pill */}
           <button type="button" onClick={() => setOpenCam(true)}>
-            <FiCamera size={16} className="text-gray-500" />
+            <div
+              className="
+                bg-gray-100 p-1.5 rounded-full flex items-center justify-center
+                lg:bg-transparent lg:p-1
+              "
+            >
+              <FiCamera
+                className="
+                  text-gray-500 text-lg
+                  lg:text-base
+                "
+              />
+            </div>
           </button>
-
         </div>
       </form>
     </>

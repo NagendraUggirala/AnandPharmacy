@@ -1,80 +1,72 @@
-// src/components/Header/CategorySlider.jsx
-import React, { useEffect, useState } from "react";
-import { getHeaderData } from "../../api/headerService";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-const CategorySlider = () => {
-  const [cats, setCats] = useState([]);
+const categories = [
+  { id: 1, name: "All", img: "/assets/category-icons/all.png" },
+  { id: 2, name: "Baby Care", img: "/assets/category-icons/baby-care.png" },
+  { id: 3, name: "Skin Care", img: "/assets/category-icons/skin-care.png" },
+  { id: 4, name: "Diabetes Care", img: "/assets/category-icons/diabetes-care.png" },
+  { id: 5, name: "Cardiac Care", img: "/assets/category-icons/heart-care.png" },
+  { id: 6, name: "Stomach Care", img: "/assets/category-icons/stomach-care.png" },
+  { id: 7, name: "Pain Relief", img: "/assets/category-icons/pain-relief.png" },
+  { id: 8, name: "Liver Care", img: "/assets/category-icons/liver-care.png" },
+  { id: 9, name: "Oral Care", img: "/assets/category-icons/oral-care.png" },
+  { id: 10, name: "Respiratory", img: "/assets/category-icons/respiratory.png" },
+  { id: 11, name: "Sexual Health", img: "/assets/category-icons/sexual-health.png" },
+  { id: 12, name: "Elderly Care", img: "/assets/category-icons/elderly-care.png" },
+  { id: 13, name: "Cold & Immunity", img: "/assets/category-icons/immunity.png" },
+  { id: 14, name: "Women Health", img: "/assets/category-icons/women-health.png" },
+  { id: 15, name: "Covid Essentials", img: "/assets/category-icons/covid.png" },
+  { id: 16, name: "First Aid", img: "/assets/category-icons/first-aid.png" },
+];
 
-  useEffect(() => {
-    (async () => {
-      const d = await getHeaderData();
-      setCats(d.categories || []);
-    })();
-  }, []);
+export default function CategorySlider() {
+  const [active, setActive] = useState(1);
+  const navigate = useNavigate();
+
+  const goToCategory = (cat) => {
+    setActive(cat.id);
+    const slug = cat.name.toLowerCase().replace(/\s+/g, "-");
+    navigate(`/home/${slug}`);
+  };
 
   return (
-    <div className="bg-white shadow-sm border-t">
+    <div className="w-full bg-white border-b py-2 shadow-sm">
 
-      {/* ---------------- DESKTOP VIEW (Flipkart + Zepto style) ---------------- */}
- {/* ---------------- DESKTOP VIEW (Zepto Style) ---------------- */}
-<div className="hidden lg:flex max-w-7xl mx-auto px-6 py-3 gap-10 border-b bg-white">
-
-  {cats.map((c) => (
-    <div
-      key={c.id}
-      className="group flex flex-col items-center cursor-pointer"
-      onClick={() => console.log(`Open category: ${c.name}`)}
-    >
-      {/* Icon small like Zepto (22-26px) */}
-      <img
-        src={c.img}
-        alt={c.name}
-        className="w-6 h-6 object-contain opacity-70 group-hover:opacity-100 transition"
-      />
-
-      {/* Text below */}
-      <p className="text-xs mt-1 text-gray-600 group-hover:text-purple-600">
-        {c.name}
-      </p>
-
-      {/* Underline highlight (Zepto effect) */}
-      <div className="h-[2px] w-5 rounded-full bg-purple-600 mt-1 opacity-0 group-hover:opacity-100 transition"></div>
-    </div>
-  ))}
-
-</div>
-
-
-      {/* ---------------- MOBILE VIEW (Zepto scrollable) ---------------- */}
-{/* ---------------- MOBILE / TABLET VIEW (Zepto App Style) ---------------- */}
-<div className="lg:hidden px-3 py-4 overflow-x-auto hide-scroll flex items-center gap-5 whitespace-nowrap">
-
-  {cats.map((c) => (
-    <div
-      key={c.id}
-      className="flex flex-col items-center cursor-pointer min-w-[70px]"
-      onClick={() => console.log(`Open: ${c.name}`)}
-    >
-      {/* Icon Container */}
-      <div className="w-16 h-16 rounded-2xl bg-gray-100 flex items-center justify-center shadow-sm">
-        <img
-          src={c.img}
-          alt={c.name}
-          className="w-10 h-10 object-contain"
-        />
+      <div
+        className="
+          flex items-center gap-5 px-4 
+          whitespace-nowrap 
+          overflow-x-auto lg:overflow-x-visible 
+          lg:justify-center 
+          no-scrollbar
+        "
+      >
+        {categories.map((cat) => (
+          <button
+            key={cat.id}
+            onClick={() => goToCategory(cat)}
+            className="flex flex-col items-center text-center shrink-0 group"
+          >
+            <img
+              src={cat.img}
+              alt={cat.name}
+              className={`
+                w-8 h-8 object-contain mb-1 transition-all
+                ${active === cat.id ? "opacity-100 scale-105" : "opacity-70 group-hover:opacity-100"}
+              `}
+            />
+            <span
+              className={`
+                text-[13px] leading-tight
+                ${active === cat.id ? "font-semibold text-gray-800" : "text-gray-600"}
+              `}
+            >
+              {cat.name}
+            </span>
+          </button>
+        ))}
       </div>
-
-      {/* Name */}
-      <p className="text-[11px] mt-1 text-center text-gray-700 leading-tight">
-        {c.name}
-      </p>
-    </div>
-  ))}
-
-</div>
-
     </div>
   );
-};
-
-export default CategorySlider;
+}

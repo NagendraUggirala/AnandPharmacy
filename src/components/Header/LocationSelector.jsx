@@ -1,92 +1,72 @@
+// src/components/Header/LocationSelector.jsx
 import React, { useEffect, useState } from "react";
-import { FiMapPin } from "react-icons/fi";
- 
-const GEO_API = "https://nominatim.openstreetmap.org/reverse?format=jsonv2";
- 
-const LocationSelector = () => {
-  const [location, setLocation] = useState(null);
-  const [loading, setLoading] = useState(false);
- 
+import { FiChevronDown, FiMapPin } from "react-icons/fi";
+
+import LiveLocationModal from "./LiveLocationModal";
+import { getPrimaryAddress } from "../../utils/addressStorage";
+
+export default function LocationSelector() {
+  const [open, setOpen] = useState(false);
+  const [primary, setPrimary] = useState(null);
+
+  /* --------------------------------------------------------
+     LOAD & AUTO-REFRESH PRIMARY ADDRESS
+  -------------------------------------------------------- */
   useEffect(() => {
-    const saved = localStorage.getItem("user_location_full");
- 
-    if (saved) {
-      setLocation(JSON.parse(saved));
-    } else {
-      fetchLiveLocation();
-    }
+    const updatePrimary = () => setPrimary(getPrimaryAddress());
+
+    updatePrimary();
+
+    // Listen for any changes from SavedAddresses / AddAddressModal
+    window.addEventListener("storage", updatePrimary);
+
+    return () => window.removeEventListener("storage", updatePrimary);
   }, []);
- 
-  const fetchLiveLocation = () => {
-    setLoading(true);
- 
-    if (!navigator.geolocation) {
-      setLoading(false);
-      return;
-    }
- 
-    navigator.geolocation.getCurrentPosition(
-      async ({ coords }) => {
-        try {
-          const res = await fetch(
-            `${GEO_API}&lat=${coords.latitude}&lon=${coords.longitude}`
-          );
-          const data = await res.json();
-          const address = data.address || {};
- 
-          const loc = {
-            area:
-              address.suburb ||
-              address.neighbourhood ||
-              address.village ||
-              "Your Area",
-            district: address.county || address.district || "",
-            state: address.state || "",
-            pincode: address.postcode || "",
-            country: address.country || "",
-          };
- 
-          setLocation(loc);
-          localStorage.setItem("user_location_full", JSON.stringify(loc));
-        } catch (err) {
-          console.error("Location fetch error:", err);
-        }
-        setLoading(false);
-      },
-      (error) => {
-        console.log("Location denied:", error);
-        setLoading(false);
-      },
-      { timeout: 8000 }
-    );
-  };
- 
-  // ------------------- Display Text -------------------
-  const topText = location
-    ? `${location.area}, ${location.state}`
-    : "Select Location";
- 
-  const subText =
-    location &&
-    `${location.district}, ${location.pincode}, ${location.country}`;
- 
+
+  /* --------------------------------------------------------
+     DISPLAY TEXT (Top UI)
+  -------------------------------------------------------- */
+
+  const displayTitle = primary?.typeTag || "Other";
+  const displayAddress =
+    primary?.fullText ||
+    `${primary?.flat || ""} ${primary?.building || ""}`
+      .trim()
+      .replace(/\s+/g, " ") ||
+    "Detect Location";
+
   return (
-<button
-      onClick={fetchLiveLocation}
-      className="flex items-center gap-2 text-sm text-gray-700 hover:text-orange-600"
->
-<FiMapPin size={18} className="text-orange-600" />
- 
-      <div className="flex flex-col text-left leading-tight">
-<span className="font-medium">{topText}</span>
- 
-        {/* Show sub-location only if location exists */}
-        {location && (
-<span className="text-[10px] text-gray-500">{subText}</span>
-        )}
-</div>
-</button>
+    <>
+      {/* OUTSIDE BUTTON */}
+      <button
+        onClick={() => setOpen(true)}
+        className="
+          flex items-center cursor-pointer w-full
+          px-3 py-2 rounded-md border border-gray-200 bg-white
+          transition active:bg-gray-100
+          lg:w-auto lg:border-none lg:bg-transparent lg:hover:bg-gray-50 lg:px-2 lg:py-1
+        "
+      >
+        {/* PIN ICON */}
+        <FiMapPin size={20} className="text-orange-600 lg:size-5" />
+
+        {/* TEXT BLOCK */}
+        <div className="flex flex-col text-left ml-2 w-full lg:w-auto">
+          <span className="text-[11px] text-gray-500 leading-tight">
+            {displayTitle}
+          </span>
+
+          <span className="text-sm font-medium truncate max-w-[160px] lg:max-w-[220px]">
+            {displayAddress}
+          </span>
+        </div>
+
+        {/* DROPDOWN ICON */}
+        <FiChevronDown size={18} className="ml-auto text-gray-600 lg:ml-1" />
+      </button>
+
+      {/* OPEN LOCATION MODAL */}
+      {open && <LiveLocationModal onClose={() => setOpen(false)} />}
+    </>
   );
-};
- 
-export default LocationSelector;
+}

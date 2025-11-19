@@ -1,5 +1,5 @@
 // src/components/Header/Header.jsx
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { FiShoppingCart, FiUser, FiCamera } from "react-icons/fi";
 
@@ -8,14 +8,17 @@ import LocationSelector from "./LocationSelector";
 import HeaderToggleMenu from "./HeaderToggleMenu";
 import CategorySlider from "./CategorySlider";
 import CartBadge from "./CartBadge";
+import Login from "../../pages/Auth/Login";
 import PrescriptionToggle from "./PrescriptionToggle";
 import { getHeaderData } from "../../api/headerService";
 
 const Header = () => {
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [loginOpen, setLoginOpen] = useState(false);
+  const [profileOpen, setProfileOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [cartCount, setCartCount] = useState(0);
-  const [logo, setLogo] = useState("");
 
   // Fetch Logo from API
   useEffect(() => {
@@ -50,8 +53,8 @@ const Header = () => {
           
           {/* Logo */}
           <div
-            className="flex items-center gap-3 cursor-pointer"
-            onClick={() => navigate("/")}
+            className="flex items-center gap-2 cursor-pointer"
+            onClick={() => goTo("/")}
           >
             <img 
               src={logo || "/assets/logo/nandi-flag.png"} 

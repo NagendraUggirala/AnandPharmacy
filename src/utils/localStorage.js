@@ -1,11 +1,20 @@
-import React from 'react';
+const KEY = "pharmacy_selected_location";
 
-const localStorage = () => {
-  return (
-    <div>
-      
-    </div>
-  );
-}
+// Load saved location
+export const loadSelectedLocation = () => {
+  try {
+    const raw = localStorage.getItem(KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch (err) {
+    return null;
+  }
+};
 
-export default localStorage;
+// Save selected location
+export const saveSelectedLocation = (loc) => {
+  try {
+    localStorage.setItem(KEY, JSON.stringify(loc));
+  } catch (err) {
+    console.error("Failed to save location", err);
+  }
+};

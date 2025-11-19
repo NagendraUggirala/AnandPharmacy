@@ -18,7 +18,7 @@ import PageLoader from "./components/Layout/PageLoader";
 import { AuthContext } from "./context/AuthContext";
 
 // ======================= PAGES =======================
-import Home from "./pages/Home/Home";
+import Home from "./pages/Home";
 
 import Login from "./pages/Auth/Login";
 import OtpVerify from "./pages/Auth/OtpVerify";
@@ -26,7 +26,7 @@ import OtpVerify from "./pages/Auth/OtpVerify";
 import ProductList from "./pages/Products/ProductList";
 import ProductDetail from "./pages/ProductDetail/ProductDetail";
 
-import CartPage from "./pages/Cart/CartPage";
+import CartPage from "./pages/CartPage";
 import Checkout from "./pages/Checkout/Checkout";
 import PaymentPage from "./pages/Checkout/PaymentPage";
 
@@ -41,6 +41,8 @@ import Babycare from "./components/Medical/Babycare";
 // 🔐 PROTECTED ROUTE WRAPPER
 // ====================================================================
 const ProtectedRoute = ({ children }) => {
+  const { user } = useContext(AuthContext);
+  const location = useLocation();
   const { user } = useContext(AuthContext);
   const location = useLocation();
 
@@ -67,7 +69,13 @@ const App = () => {
       {/* ROUTES */}
       <Routes>
         {/* HOME */}
-        <Route path="/" element={<Home />} />
+  
+        {/* When opening http://localhost:3000 redirect to /home/all */}
+        <Route path="/" element={<Navigate to="/home/all" replace />} />
+
+        {/* Home Main Route */}
+        <Route path="/home/*" element={<Home />} />
+
 
         {/* PRODUCT LIST + DETAILS */}
         <Route path="/products" element={<ProductList />} />
@@ -146,7 +154,7 @@ const App = () => {
           }
         />
         {/* LOGIN + OTP */}
-        <Route path="/login" element={<Login />} />
+        <Route path="/login/*" element={<Login />} />
         <Route path="/otp-verify" element={<OtpVerify />} />
 
         {/* WRONG ROUTE -> BACK TO HOME */}

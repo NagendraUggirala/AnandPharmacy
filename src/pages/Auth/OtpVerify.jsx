@@ -1,69 +1,197 @@
-// src/pages/Auth/OtpVerify.jsx
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect, useRef } from "react";
+import { verifyOtpAPI, sendOtpAPI } from "../../api/authService";
+import OtpPopupCard from "./OtpPopupCard";
 
-export default function OtpVerify() {
-  const navigate = useNavigate();
-  const [otp, setOtp] = useState("");
+const OtpVerify = ({ identifier, onClose }) => {
+  const [otp, setOtp] = useState(["", "", "", "", "", ""]);
+  const [timer, setTimer] = useState(30);
+  const [otpValue, setOtpValue] = useState(null);
 
-  const mobile = localStorage.getItem("mobile"); // from Login screen
+  const refs = useRef([]);
 
-  const handleVerify = () => {
-    if (otp.length !== 6) {
-      alert("Please enter 6-digit OTP");
-      return;
+  // TIMER
+  useEffect(() => {
+    const control = setInterval(() => {
+      setTimer((t) => (t > 0 ? t - 1 : 0));
+    }, 1000);
+    return () => clearInterval(control);
+  }, []);
+
+  // ---------------------------
+  // ⭐ HANDLE MANUAL TYPING
+  // ---------------------------
+  const handleOtpInput = (value, idx) => {
+    if (!/^\d?$/.test(value)) return;
+
+    const newOtp = [...otp];
+    newOtp[idx] = value;
+    setOtp(newOtp);
+
+    if (value && idx < 5) refs.current[idx + 1]?.focus();
+  };
+
+  // ---------------------------
+  // ⭐ HANDLE PASTE (CTRL + V)
+  // ---------------------------
+  const handlePaste = (e) => {
+    const paste = e.clipboardData.getData("text").trim();
+
+    if (!/^\d{6}$/.test(paste)) return;
+
+    const digits = paste.split("");
+    setOtp(digits);
+
+    digits.forEach((d, i) => {
+      refs.current[i].value = d;
+    });
+
+    refs.current[5]?.focus();
+  };
+
+  // ---------------------------
+  // ⭐ AUTO-FILL OTP when generated
+  // ---------------------------
+  useEffect(() => {
+    if (!otpValue) return;
+
+    if (/^\d{6}$/.test(otpValue)) {
+      const digits = otpValue.split("");
+
+      setOtp(digits);
+
+      digits.forEach((d, i) => {
+        if (refs.current[i]) refs.current[i].value = d;
+      });
+
+      refs.current[5]?.focus();
     }
+  }, [otpValue]);
 
-    // ---- MOCK OTP VERIFICATION ----
-    if (otp === "123456") {
-      // Save logged in user
-      localStorage.setItem(
-        "user",
-        JSON.stringify({ mobile: mobile })
-      );
+  // ---------------------------
+  // ⭐ VERIFY OTP
+  // ---------------------------
+  const handleVerify = async () => {
+    const code = otp.join("");
 
-      alert("OTP Verified Successfully!");
+    const res = await verifyOtpAPI(identifier, code);
+    if (res.success) {
+      localStorage.setItem("user", JSON.stringify({ identifier }));
+      window.location.href = "/";
+    }
+  };
 
-      navigate("/"); // redirect → Header detects & shows profile
-    } else {
-      alert("Incorrect OTP, try again");
+  // ---------------------------
+  // ⭐ RESEND OTP
+  // ---------------------------
+  const resendOtp = async () => {
+    const res = await sendOtpAPI(identifier);
+    if (res.success) {
+      setOtpValue(res.otp);
+      setTimer(30);
     }
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
-      <div
-        className="p-8 rounded-2xl shadow-lg w-full max-w-md text-center"
-        style={{
-          background: "linear-gradient(135deg, #e2a52bff, #ff69b4)",
-          color: "white",
-        }}
-      >
-        <h2 className="text-2xl font-bold mb-4">OTP Verification</h2>
+    <>
+      {/* OTP Popup */}
+      {otpValue && (
+        <OtpPopupCard otp={otpValue} onClose={() => setOtpValue(null)} />
+      )}
 
-        <p className="opacity-90 mb-4">
-          OTP sent to <span className="font-bold">{mobile}</span>
-        </p>
+      {/* Overlay */}
+      <div className="fixed inset-0 bg-black/60 flex justify-center items-center z-[2000] p-4">
 
-        <input
-          type="text"
-          maxLength="6"
-          value={otp}
-          onChange={(e) => setOtp(e.target.value.replace(/\D/g, ""))}
-          className="w-full p-3 rounded-xl mb-6 text-black text-center text-lg focus:outline-none"
-          placeholder="Enter 6-digit OTP"
-        />
+        {/* Main Box */}
+        <div className="bg-white rounded-2xl shadow-xl overflow-hidden flex w-[750px] h-[420px] max-lg:flex-col max-lg:w-full max-lg:h-auto">
 
-        <button
-          onClick={handleVerify}
-          className="w-full py-3 text-lg font-semibold rounded-xl 
-                     bg-white text-red-700 hover:bg-gray-200 transition"
-        >
-          Verify OTP
-        </button>
+          {/* LEFT (Orange Box) */}
+          <div className="w-[55%] p-8 text-white bg-gradient-to-br from-orange-500 to-orange-700 relative max-lg:w-full max-lg:p-6 max-lg:rounded-b-2xl">
 
-        <p className="mt-4 text-sm">Use OTP: <b>123456</b></p>
+            <button
+              onClick={onClose}
+              className="absolute top-5 left-5 text-2xl max-lg:hidden"
+            >
+              ←
+            </button>
+
+            <h2 className="text-3xl font-bold mt-10 max-lg:mt-4 max-lg:text-2xl">
+              OTP Verification
+            </h2>
+
+            <p className="text-sm mt-1 opacity-90 max-lg:text-center">
+              OTP sent to <span className="font-bold">{identifier}</span>
+            </p>
+
+            {/* OTP INPUT BOXES */}
+            <div className="flex gap-4 mt-8 justify-center max-sm:gap-2">
+
+              {otp.map((val, i) => (
+                <input
+                  key={i}
+                  ref={(el) => (refs.current[i] = el)}
+                  maxLength={1}
+                  value={val}
+                  onChange={(e) => handleOtpInput(e.target.value, i)}
+                  onPaste={handlePaste}
+                  className="
+                    w-12 h-12 rounded-full bg-white text-black text-xl font-bold text-center
+                    shadow-md border-2 border-transparent 
+                    hover:bg-green-300 hover:border-green-600
+                    focus:bg-green-400 focus:border-green-700 transition-all
+                    max-sm:w-10 max-sm:h-10 max-sm:text-lg
+                  "
+                />
+              ))}
+
+            </div>
+
+            {/* TIMER */}
+            <p className="mt-6 text-lg text-center font-semibold max-sm:text-base">
+              00:{String(timer).padStart(2, "0")}
+            </p>
+
+            {/* RESEND */}
+            {timer === 0 && (
+              <button
+                onClick={resendOtp}
+                className="block mx-auto text-sm underline text-white mt-2"
+              >
+                Send OTP Again
+              </button>
+            )}
+
+            {/* VERIFY BUTTON */}
+            <button
+              onClick={handleVerify}
+              className="mt-6 mx-auto w-40 py-2 bg-white text-orange-700 font-bold rounded-full hover:bg-gray-200 block"
+            >
+              Verify OTP
+            </button>
+          </div>
+
+          {/* RIGHT WHITE PANEL */}
+          <div className="w-[45%] bg-white text-center p-6 relative max-lg:hidden">
+            <button
+              onClick={onClose}
+              className="absolute top-4 right-4 text-2xl text-gray-600"
+            >
+              ×
+            </button>
+
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/104/104588.png"
+              className="w-24 mx-auto mt-10"
+              alt="illustration"
+            />
+
+            <p className="mt-6 text-xl font-semibold">
+              Order faster & easier <br /> every time
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
-}
+};
+
+export default OtpVerify;
