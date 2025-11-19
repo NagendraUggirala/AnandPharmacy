@@ -1,12 +1,5 @@
-// src/App.jsx
-import React, { useContext } from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-  useLocation,
-} from "react-router-dom";
+import React from "react"; 
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import "./App.css";
 
@@ -59,19 +52,11 @@ const ProtectedRoute = ({ children }) => {
 // ====================================================================
 const App = () => {
   return (
-    <Router>
-      {/* HEADER ALWAYS VISIBLE */}
-      <Header />
+    <div className="home-wrapper pt-[150px] lg:pt-[120px]">
+      <div className="home-content px-4 py-6 lg:py-10">
+        <Routes>
 
-      {/* GLOBAL PAGE LOADING INDICATOR */}
-      <PageLoader />
-
-      {/* ROUTES */}
-      <Routes>
-        {/* HOME */}
-  
-        {/* When opening http://localhost:3000 redirect to /home/all */}
-        <Route path="/" element={<Navigate to="/home/all" replace />} />
+          <Route path="/" element={<Navigate to="all" replace />} />
 
         {/* Home Main Route */}
         <Route path="/home/*" element={<Home />} />
@@ -162,6 +147,6 @@ const App = () => {
       </Routes>
     </Router>
   );
-};
+}
 
 export default App;
