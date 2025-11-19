@@ -16,7 +16,6 @@ import Home from "./pages/Home";
 import Login from "./pages/Auth/Login";
 import OtpVerify from "./pages/Auth/OtpVerify";
 
-import ProductList from "./pages/Products/ProductList";
 import ProductDetail from "./pages/ProductDetail/ProductDetail";
 
 import CartPage from "./pages/CartPage";
