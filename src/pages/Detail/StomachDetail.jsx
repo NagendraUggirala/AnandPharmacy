@@ -247,7 +247,6 @@ const StomachDetail = () => {
             </ul>
 
             {/* ZEPPTO ICON BOXES */}
-
           </div>
 
           {/* INFO TILES */}
@@ -336,6 +335,9 @@ const StomachDetail = () => {
       {/* ====================================================
           SIMILAR PRODUCTS
       ===================================================== */}
+      {/* ====================================================
+    SIMILAR PRODUCTS (FINAL WORKING ARROWS)
+==================================================== */}
       <div className="mt-12 relative">
         <h2 className="text-xl font-bold mb-4">Similar Products</h2>
 
@@ -344,7 +346,15 @@ const StomachDetail = () => {
           onClick={() =>
             scrollRef.current.scrollBy({ left: -300, behavior: "smooth" })
           }
-          className="hidden md:flex absolute -left-15 top-1/2 -translate-y-1/2 bg-white shadow-lg w-10 h-10 rounded-full justify-center items-center text-gray-700 hover:bg-gray-100z-20" >
+          className="
+      hidden md:flex
+      absolute -left-20 top-1/2 -translate-y-1/2
+      bg-white shadow-lg w-10 h-10 rounded-full
+      justify-center items-center text-gray-700
+      hover:bg-gray-100
+      z-20
+    "
+        >
           ❮
         </button>
 
@@ -370,7 +380,7 @@ const StomachDetail = () => {
           ref={scrollRef}
           className="
       flex overflow-x-auto gap-4 pb-3 no-scrollbar
-      scroll-smooth  px-1
+      scroll-smooth px-1
     "
         >
           {allProducts.slice(0, 12).map((sim) => {
@@ -401,54 +411,75 @@ const StomachDetail = () => {
           YOU MIGHT ALSO LIKE
       ===================================================== */}
 
-      <div className="mt-12 relative">
-        <h2 className="text-xl font-bold mb-4">You might also like</h2>
+    {/* ====================================================
+    YOU MIGHT ALSO LIKE  (FINAL FIXED ARROWS)
+==================================================== */}
+<div className="mt-12 relative">
+  <h2 className="text-xl font-bold mb-4">You might also like</h2>
 
-        {/* LEFT ARROW */}
-        <button
-          onClick={() =>
-            likeScrollRef.current.scrollBy({ left: -300, behavior: "smooth" })
-          }
-          className=" hidden md:flex absolute -left-15 top-1/2 -translate-y-1/2 bg-white shadow-lg w-10 h-10 rounded-full justify-center items-center text-gray-70 hover:bg-gray-100 z-20">
-          ❮
-        </button>
+  {/* LEFT ARROW */}
+  <button
+    onClick={() =>
+      likeScrollRef.current.scrollBy({ left: -300, behavior: "smooth" })
+    }
+    className="
+      hidden md:flex
+      absolute -left-20 top-1/2 -translate-y-1/2
+      bg-white shadow-lg w-10 h-10 rounded-full
+      justify-center items-center text-gray-700
+      hover:bg-gray-100
+      z-20
+    "
+  >
+    ❮
+  </button>
 
-        {/* RIGHT ARROW */}
-        <button
-          onClick={() =>
-            likeScrollRef.current.scrollBy({ left: 300, behavior: "smooth" })
-          }
-          className="hidden md:flex absolute -right-15 top-1/2 -translate-y-1/2 bg-white shadow-lg w-10 h-10 rounded-full justify-center items-center text-gray-700 hover:bg-gray-100 z-20">
-          ❯
-        </button>
+  {/* RIGHT ARROW */}
+  <button
+    onClick={() =>
+      likeScrollRef.current.scrollBy({ left: 300, behavior: "smooth" })
+    }
+    className="
+      hidden md:flex
+      absolute -right-20 top-1/2 -translate-y-1/2
+      bg-white shadow-lg w-10 h-10 rounded-full
+      justify-center items-center text-gray-700
+      hover:bg-gray-100
+      z-20
+    "
+  >
+    ❯
+  </button>
 
-        {/* SCROLL LIST */}
-        <div
-          ref={likeScrollRef}
-          className="flex overflow-x-auto gap-4 pb-3 no-scrollbar scroll-smooth">
-          {allProducts.slice(12, 28).map((sim) => {
-            const simImg = Array.isArray(sim.images)
-              ? sim.images[0]
-              : typeof sim.images === "string"
-                ? sim.images
-                : "";
+  {/* SCROLLER */}
+  <div
+    ref={likeScrollRef}
+    className="flex overflow-x-auto gap-4 pb-3 no-scrollbar scroll-smooth"
+  >
+    {allProducts.slice(12, 28).map((sim) => {
+      const simImg = Array.isArray(sim.images)
+        ? sim.images[0]
+        : typeof sim.images === "string"
+        ? sim.images
+        : "";
 
-            return (
-              <Link
-                key={sim.id}
-                to={`/ProductDetail/StomachDetail/${sim.id}`}
-                className="min-w-[150px] p-3 border rounded-xl bg-white shadow-sm"
-              >
-                <img src={simImg} className="h-24 object-contain mx-auto" />
-                <p className="text-sm mt-2 font-semibold">{sim.name}</p>
-                <p className="text-green-600 font-bold">
-                  ₹{price(sim.final_price)}
-                </p>
-              </Link>
-            );
-          })}
-        </div>
-      </div>
+      return (
+        <Link
+          key={sim.id}
+          to={`/ProductDetail/StomachDetail/${sim.id}`}
+          className="min-w-[150px] p-3 border rounded-xl bg-white shadow-sm"
+        >
+          <img src={simImg} className="h-24 object-contain mx-auto" />
+          <p className="text-sm mt-2 font-semibold">{sim.name}</p>
+          <p className="text-green-600 font-bold">
+            ₹{price(sim.final_price)}
+          </p>
+        </Link>
+      );
+    })}
+  </div>
+</div>
+
     </div>
   );
 };
