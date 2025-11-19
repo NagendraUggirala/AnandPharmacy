@@ -35,21 +35,22 @@ import DeliveryMap from "./pages/Orders/DeliveryMap";
 
 import Profile from "./pages/Profile/Profile";
 import AddressManager from "./pages/Profile/AddressManager";
-
+import Babycare from "./components/Medical/Babycare";
 
 // ====================================================================
 // 🔐 PROTECTED ROUTE WRAPPER
 // ====================================================================
 const ProtectedRoute = ({ children }) => {
-  const user = localStorage.getItem("user");
+  const { user } = useContext(AuthContext);
+  const location = useLocation();
 
+  // not logged in → redirect to login
   if (!user) {
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/login" replace state={{ from: location }} />;
   }
 
   return children;
 };
-
 
 // ====================================================================
 // 🌐 MAIN APP
@@ -73,14 +74,8 @@ const App = () => {
         <Route path="/product/:id" element={<ProductDetail />} />
 
         {/* CART (login required) */}
-        <Route
-          path="/cart"
-          element={
-            <ProtectedRoute>
-              <CartPage />
-            </ProtectedRoute>
-          }
-        />
+        <Route path="/cart" element={<CartPage />} />
+
 
         {/* CHECKOUT */}
         <Route
@@ -101,6 +96,7 @@ const App = () => {
             </ProtectedRoute>
           }
         />
+        
 
         {/* ORDER TRACKING */}
         <Route
@@ -134,6 +130,14 @@ const App = () => {
 
         {/* ADDRESS MANAGER */}
         <Route
+          path="/babycare"
+          element={
+          
+              <Babycare />
+            
+          }
+        />
+<Route
           path="/addresses"
           element={
             <ProtectedRoute>
@@ -141,7 +145,6 @@ const App = () => {
             </ProtectedRoute>
           }
         />
-
         {/* LOGIN + OTP */}
         <Route path="/login" element={<Login />} />
         <Route path="/otp-verify" element={<OtpVerify />} />

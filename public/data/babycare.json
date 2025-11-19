@@ -1,0 +1,164 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Baby Diaper Pack",
+      "brand": "Huggies",
+      "price": "₹499",
+      "originalPrice": "₹699",
+      "savings": "29%",
+      "image": "/assets/Babyimg/huggies.jpg",
+      "description": "Soft and absorbent diapers to keep your baby dry and comfortable",
+      "composition": "Cotton blend, Hypoallergenic",
+      "ingredients": "Polymer absorbent, Cotton, Non-woven fabric",
+      "usage": "Change diaper every 2-3 hours or as needed",
+      "storage": "Store in a cool, dry place",
+      "suitableFor": "Newborns to 12 months",
+      "highlights": [
+        "Extra absorbent core",
+        "Soft elastic waistbands",
+        "Dermatologically tested"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Baby Shampoo",
+      "brand": "Sebamed",
+      "price": "₹199",
+      "originalPrice": "₹299",
+      "savings": "33%",
+      "image": "/assets/Babyimg/shampoo.jpg",
+      "description": "Gentle shampoo for sensitive baby skin and hair",
+      "composition": "Mild cleansing agents, No tears formula",
+      "ingredients": "Water, Cocamidopropyl betaine, Glycerin",
+      "usage": "Apply small amount on wet hair, lather, rinse thoroughly",
+      "storage": "Keep away from direct sunlight",
+      "suitableFor": "0+ months",
+      "highlights": [
+        "Tear-free formula",
+        "Hypoallergenic",
+        "Clinically tested for safety"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Baby Lotion",
+      "brand": "Sebamed",
+      "price": "₹249",
+      "originalPrice": "₹350",
+      "savings": "29%",
+      "image": "/assets/Babyimg/sebamed.jpg",
+      "description": "Keeps baby's skin soft and hydrated all day",
+      "composition": "Moisturizing ingredients, Hypoallergenic",
+      "ingredients": "Water, Glycerin, Mineral oil, Aloe vera extract",
+      "usage": "Apply to clean skin, massage gently until absorbed",
+      "storage": "Store in a cool dry place, avoid eye contact",
+      "suitableFor": "Newborns and infants",
+      "highlights": [
+        "Non-greasy texture",
+        "Gentle on sensitive skin",
+        "Maintains skin moisture"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Baby Wipes",
+      "brand": "Johnsons",
+      "price": "₹149",
+      "originalPrice": "₹220",
+      "savings": "32%",
+      "image": "/assets/Babyimg/babywipes.jpg",
+      "description": "Soft and gentle wipes for delicate baby skin",
+      "composition": "Alcohol-free, Paraben-free",
+      "ingredients": "Water, Aloe vera, Vitamin E",
+      "usage": "Use to clean baby's skin as needed",
+      "storage": "Keep pack sealed to prevent drying",
+      "suitableFor": "All ages",
+      "highlights": [
+        "Soft & thick wipes",
+        "Safe for newborns",
+        "Easy to carry pack"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Multivitamin",
+      "brand": "Baby Vit",
+      "price": "₹149",
+      "originalPrice": "₹220",
+      "savings": "30%",
+      "image": "/assets/Babyimg/babyvit.jpg",
+      "description": "Daily multivitamins to support growth, immunity, and overall development of your baby",
+      "composition": "Vitamins A, B, C, D, E, Minerals",
+      "ingredients": "Vitamin A, Vitamin C, Calcium, Iron, Zinc",
+      "usage": "Give as directed by your pediatrician",
+      "storage": "Store in a cool, dry place",
+      "suitableFor": "6 months and above",
+      "highlights": [
+        "Supports immunity",
+        "Promotes healthy growth",
+        "Easy-to-administer chewables"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "L-Methylfolate",
+      "brand": "Babyzoid",
+      "price": "₹149",
+      "originalPrice": "₹220",
+      "savings": "12%",
+      "image": "/assets/Babyimg/tablet.jpg",
+      "description": "L-Methylfolate supplement for proper brain development and red blood cell formation",
+      "composition": "L-Methylfolate 400mcg",
+      "ingredients": "Folic Acid (L-Methylfolate), Microcrystalline cellulose",
+      "usage": "Give once daily as directed by a pediatrician",
+      "storage": "Keep in a cool dry place away from sunlight",
+      "suitableFor": "Infants and toddlers",
+      "highlights": [
+        "Supports cognitive development",
+        "Promotes healthy blood cells",
+        "Easy-to-swallow tablets"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Baby Syrup",
+      "brand": "Homoeopathic Medicine",
+      "price": "₹149",
+      "originalPrice": "₹220",
+      "savings": "25%",
+      "image": "/assets/Babyimg/babysyrup.jpg",
+      "description": "Natural homeopathic tonic to boost appetite, digestion, and energy levels in babies",
+      "composition": "Homeopathic extracts of natural herbs",
+      "ingredients": "Chamomilla, Nux Vomica, Ferrum Phos",
+      "usage": "2-3 ml twice daily or as prescribed by your pediatrician",
+      "storage": "Store below 25°C, keep away from direct sunlight",
+      "suitableFor": "3 months and above",
+      "highlights": [
+        "Boosts appetite",
+        "Improves digestion",
+        "Gentle and safe for babies"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Baby Soap",
+      "brand": "Sebamed",
+      "price": "₹149",
+      "originalPrice": "₹220",
+      "savings": "20%",
+      "image": "/assets/Babyimg/soap.jpg",
+      "description": "Gentle cleansing soap for delicate baby skin, keeping it soft, smooth, and moisturized",
+      "composition": "Mild cleansing agents, pH 5.5",
+      "ingredients": "Sodium Cocoyl Glutamate, Glycerin, Panthenol",
+      "usage": "Lather gently on baby's skin and rinse thoroughly",
+      "storage": "Store in a dry place",
+      "suitableFor": "All ages",
+      "highlights": [
+        "Maintains skin pH",
+        "Soft & smooth skin",
+        "Dermatologically tested"
+      ]
+    }
+  ]
+}
