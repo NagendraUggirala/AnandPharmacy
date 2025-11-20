@@ -293,7 +293,7 @@ header {
 .category-slider {
   background: white;
   border-top: 1px solid #e5e7eb;
-  padding: 12px 0;
+  padding: 16px 0;
 }
 
 /* ----------------------------------------------------
@@ -699,11 +699,21 @@ header {
 
 /* Fix gap below fixed header */
 .home-wrapper {
-  padding-top: 130px;     /* for mobile */
+  padding-top:20px;     /* for mobile */
 }
 
 @media (min-width: 1024px) {
   .home-wrapper {
-    padding-top: 100px;   /* for desktop */
+    padding-top: 20px;   /* for desktop */
   }
+}
+
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
