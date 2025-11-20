@@ -161,12 +161,6 @@ const Header = () => {
           </div>
         </div>
 
-        {/* CATEGORY SLIDER */}
-        <div className="mt-1">
-          <CategorySlider />
-        </div>
-      </header>
-
       {/* SPACER BELOW HEADER */}
       <div className="h-[120px] lg:h-[90px]" />
 
