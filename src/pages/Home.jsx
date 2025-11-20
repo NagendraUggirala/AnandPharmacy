@@ -1,3 +1,4 @@
+//C:\Users\kiree\OneDrive\Documents\GitHub\AnandPharmacy\src\pages\Home.jsx
 import React from "react"; 
 import { Routes, Route, Navigate } from "react-router-dom";
 
@@ -48,4 +49,3 @@ export default function Home() {
     </div>
   );
 }
-

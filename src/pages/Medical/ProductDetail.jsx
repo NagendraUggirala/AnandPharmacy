@@ -1,0 +1,500 @@
+import React, { useState } from "react";
+
+const ProductDetail = ({ product, onBack, relatedProducts = [] }) => {
+  const [quantity, setQuantity] = useState(1);
+  const [selectedImage, setSelectedImage] = useState(0);
+  const [showImageModal, setShowImageModal] = useState(false);
+
+  const medication = product;
+  const detailedData = medication.detailedData || {};
+
+  // Default data structure
+  const defaultTabletInfo = {
+    about: `${medication.name} is a cardiovascular medication that helps in managing heart conditions. It provides effective treatment and prevention for various heart-related issues.`,
+    uses: [
+      "Cardiovascular protection",
+      "Blood clot prevention", 
+      "Heart attack risk reduction",
+      "Stroke prevention"
+    ],
+    advantages: [
+      "Effective formulation",
+      "Cost-effective alternative",
+      "Quality assured",
+      "Trusted brand"
+    ],
+    storage: "Store in a cool, dry place away from direct sunlight. Keep out of reach of children.",
+    dosageInstructions: [
+      "Take as directed by your physician",
+      "Follow the prescribed dosage regularly",
+      "Do not stop medication without consulting your doctor"
+    ],
+    precautions: [
+      "Consult your doctor before use",
+      "Inform your doctor about other medications",
+      "Regular monitoring recommended",
+      "Follow up with your healthcare provider"
+    ]
+  };
+
+  const tabletInfo = detailedData.tabletInfo || defaultTabletInfo;
+
+  const handleAddToCart = () => {
+    alert(`${medication.name} added to cart!`);
+  };
+
+  const handleBuyNow = () => {
+    alert(`Proceeding to buy ${medication.name}`);
+  };
+
+  const handleThumbnailClick = (index) => {
+    setSelectedImage(index);
+  };
+
+  const handleNextImage = () => {
+    const images = detailedData.images || [medication.image];
+    setSelectedImage((prev) => (prev + 1) % images.length);
+  };
+
+  const handlePrevImage = () => {
+    const images = detailedData.images || [medication.image];
+    setSelectedImage((prev) => (prev - 1 + images.length) % images.length);
+  };
+
+  const openImageModal = () => {
+    setShowImageModal(true);
+  };
+
+  const closeImageModal = () => {
+    setShowImageModal(false);
+  };
+
+  const handleImageError = (e, fallbackText = medication.name) => {
+    e.target.src = `https://via.placeholder.com/500x500/DC2626/FFFFFF?text=${encodeURIComponent(fallbackText)}`;
+  };
+
+  const images = detailedData.images || [medication.image];
+
+  return (
+    <div className="min-h-screen bg-gray-50 py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Back Button */}
+        <button
+          onClick={onBack}
+          className="flex items-center text-cardiac-red hover:text-cardiac-dark mb-6 transition-colors"
+        >
+          <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+          Back to Cardiac Medications
+        </button>
+
+        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
+            {/* Product Image Gallery */}
+            <div className="flex flex-row gap-4 lg:gap-6">
+              {/* Thumbnail Gallery */}
+              {images.length > 1 && (
+                <div className="flex flex-col gap-2 order-1">
+                  {images.map((image, index) => (
+                    <button
+                      key={index}
+                      onClick={() => handleThumbnailClick(index)}
+                      className={`w-16 h-16 lg:w-20 lg:h-20 border-2 rounded-lg overflow-hidden transition-all duration-200 flex-shrink-0 ${
+                        selectedImage === index 
+                          ? 'border-cardiac-red ring-2 ring-cardiac-red ring-opacity-50' 
+                          : 'border-gray-200 hover:border-gray-400'
+                      }`}
+                    >
+                      <img
+                        src={image}
+                        alt={`Thumbnail ${index + 1}`}
+                        className="w-full h-full object-cover"
+                        onError={(e) => handleImageError(e, `Img ${index + 1}`)}
+                      />
+                    </button>
+                  ))}
+                </div>
+              )}
+
+              {/* Main Image Container */}
+              <div className={`${images.length > 1 ? 'flex-1 order-2' : 'w-full order-1'}`}>
+                <div 
+                  className="w-full h-80 lg:h-96 bg-gray-100 rounded-lg cursor-zoom-in overflow-hidden relative"
+                  onClick={openImageModal}
+                >
+                  <img
+                    src={images[selectedImage]}
+                    alt={`${medication.name} - Image ${selectedImage + 1}`}
+                    className="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
+                    onError={(e) => handleImageError(e, medication.name)}
+                  />
+                  
+                  {images.length > 1 && (
+                    <>
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handlePrevImage();
+                        }}
+                        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 w-10 h-10 rounded-full flex items-center justify-center shadow-md transition-all"
+                      >
+                        <svg className="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                        </svg>
+                      </button>
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleNextImage();
+                        }}
+                        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 w-10 h-10 rounded-full flex items-center justify-center shadow-md transition-all"
+                      >
+                        <svg className="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </button>
+                    </>
+                  )}
+
+                  {images.length > 1 && (
+                    <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">
+                      {selectedImage + 1} / {images.length}
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+
+            {/* Product Details */}
+            <div className="space-y-6">
+              {/* Title and Brand */}
+              <div>
+                <h1 className="text-3xl font-bold text-gray-900 mb-2">
+                  {medication.name}
+                </h1>
+                <p className="text-lg text-gray-600">{medication.brand}</p>
+                <p className="text-sm text-gray-500 mt-1">
+                  {detailedData.packaging || "Strip of 10 tablets"}
+                </p>
+                <p className="text-sm text-gray-600 mt-2">{medication.composition}</p>
+              </div>
+
+              {/* Description */}
+              <div>
+                <p className="text-gray-700 leading-relaxed">{medication.description}</p>
+              </div>
+
+              {/* Pricing */}
+              <div className="space-y-2">
+                <div className="flex items-center space-x-4">
+                  <span className="text-3xl font-bold text-green-600">{medication.price}</span>
+                  <span className="text-xl text-gray-500 line-through">{medication.originalPrice}</span>
+                  <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
+                    Save {medication.savings}
+                  </span>
+                </div>
+                <p className="text-green-600 font-semibold">Inclusive of all taxes</p>
+              </div>
+
+              {/* Quantity Selector */}
+              <div className="space-y-3">
+                <label className="block text-sm font-medium text-gray-700">Quantity</label>
+                <div className="flex items-center space-x-3">
+                  <button
+                    onClick={() => setQuantity(Math.max(1, quantity - 1))}
+                    className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-50 transition-colors"
+                  >
+                    <span className="text-lg">-</span>
+                  </button>
+                  <span className="w-12 text-center text-lg font-semibold">{quantity}</span>
+                  <button
+                    onClick={() => setQuantity(quantity + 1)}
+                    className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-50 transition-colors"
+                  >
+                    <span className="text-lg">+</span>
+                  </button>
+                  <span className="text-sm text-gray-500 ml-4">
+                    {detailedData.packaging || "Strip of 10 tablets"}
+                  </span>
+                </div>
+              </div>
+
+              {/* Action Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button
+                  onClick={handleAddToCart}
+                  className="flex-1 bg-cardiac-red text-white py-4 px-6 rounded-lg font-semibold hover:bg-cardiac-dark transition-colors shadow-md hover:shadow-lg text-lg"
+                >
+                  Add to Cart
+                </button>
+                <button
+                  onClick={handleBuyNow}
+                  className="flex-1 bg-green-600 text-white py-4 px-6 rounded-lg font-semibold hover:bg-green-700 transition-colors shadow-md hover:shadow-lg text-lg"
+                >
+                  Buy Now
+                </button>
+              </div>
+
+              {/* Delivery Info */}
+              <div className="border-t pt-4 space-y-3">
+                <div className="flex items-center space-x-3 text-green-600">
+                  <svg className="w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="font-semibold">Fast Delivery - Same Day Dispatch</span>
+                </div>
+                <div className="flex items-center space-x-3 text-blue-600">
+                  <svg className="w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                  </svg>
+                  <span className="font-semibold">2 Days Easy Exchanges</span>
+                </div>
+                <div className="flex items-center space-x-3 text-purple-600">
+                  <svg className="w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                  <span className="font-semibold">DCGI & FDA Approved</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Tablet Information Section */}
+          <div className="border-t bg-white">
+            <div className="p-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Product Information</h2>
+              
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {/* Left Column */}
+                <div className="space-y-6">
+                  {/* About Tablet */}
+                  <div className="bg-gray-50 rounded-lg p-6">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                      <svg className="w-5 h-5 text-cardiac-red mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      About {medication.name}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">{tabletInfo.about}</p>
+                    <div className="mt-4 p-4 bg-white rounded border">
+                      <div className="grid grid-cols-2 gap-4">
+                        <div>
+                          <span className="text-gray-600">Packaging:</span>
+                          <p className="font-semibold text-gray-900">
+                            {detailedData.packaging || "Strip of 10 tablets"}
+                          </p>
+                        </div>
+                        <div>
+                          <span className="text-gray-600">Strength:</span>
+                          <p className="font-semibold text-gray-900">
+                            {detailedData.dosage || medication.composition}
+                          </p>
+                        </div>
+                        <div>
+                          <span className="text-gray-600">Form:</span>
+                          <p className="font-semibold text-gray-900">
+                            {detailedData.form || "Tablet"}
+                          </p>
+                        </div>
+                        <div>
+                          <span className="text-gray-600">Manufacturer:</span>
+                          <p className="font-semibold text-gray-900">
+                            {detailedData.manufacturer || "Leading Pharma"}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Uses */}
+                  <div className="bg-gray-50 rounded-lg p-6">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                      <svg className="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      Uses & Benefits
+                    </h3>
+                    <ul className="space-y-2">
+                      {tabletInfo.uses.map((use, index) => (
+                        <li key={index} className="flex items-start">
+                          <svg className="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          </svg>
+                          <span className="text-gray-600">{use}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Storage Information */}
+                  <div className="bg-gray-50 rounded-lg p-6">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                      <svg className="w-5 h-5 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                      </svg>
+                      Storage Instructions
+                    </h3>
+                    <div className="flex items-center space-x-3 p-4 bg-white rounded border">
+                      <svg className="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                      </svg>
+                      <div>
+                        <p className="font-semibold text-gray-900">Store Properly</p>
+                        <p className="text-sm text-gray-600">{tabletInfo.storage}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Column */}
+                <div className="space-y-6">
+                  {/* Advantages */}
+                  <div className="bg-gray-50 rounded-lg p-6">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                      <svg className="w-5 h-5 text-yellow-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                      </svg>
+                      Key Advantages
+                    </h3>
+                    <ul className="space-y-2">
+                      {tabletInfo.advantages.map((advantage, index) => (
+                        <li key={index} className="flex items-start">
+                          <svg className="w-4 h-4 text-yellow-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          </svg>
+                          <span className="text-gray-600">{advantage}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Dosage Instructions */}
+                  <div className="bg-gray-50 rounded-lg p-6">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                      <svg className="w-5 h-5 text-purple-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                      </svg>
+                      Dosage Instructions
+                    </h3>
+                    <ul className="space-y-2">
+                      {tabletInfo.dosageInstructions.map((instruction, index) => (
+                        <li key={index} className="flex items-start">
+                          <svg className="w-4 h-4 text-purple-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                          <span className="text-gray-600">{instruction}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Precautions */}
+                  <div className="bg-gray-50 rounded-lg p-6">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                      <svg className="w-5 h-5 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.35 16.5c-.77.833.192 2.5 1.732 2.5z" />
+                      </svg>
+                      Important Precautions
+                    </h3>
+                    <ul className="space-y-2">
+                      {tabletInfo.precautions.map((precaution, index) => (
+                        <li key={index} className="flex items-start">
+                          <svg className="w-4 h-4 text-orange-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                          <span className="text-gray-600">{precaution}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Related Products Section */}
+        {relatedProducts.length > 0 && (
+          <div className="mt-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Medications</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {relatedProducts.map((product) => (
+                <div
+                  key={product.id}
+                  className="bg-white rounded-lg shadow-md border hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
+                >
+                  <div className="relative">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-48 object-cover rounded-t-lg"
+                      onError={(e) => handleImageError(e, product.name)}
+                    />
+                    <span className="absolute top-2 right-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-semibold">
+                      Save {product.savings}
+                    </span>
+                  </div>
+                  <div className="p-4">
+                    <h3 className="font-semibold text-lg mb-1 text-gray-900 line-clamp-2">
+                      {product.name}
+                    </h3>
+                    <p className="text-gray-600 text-sm mb-2">{product.brand}</p>
+                    <p className="text-gray-600 text-sm mb-3 line-clamp-2">
+                      {product.description}
+                    </p>
+                    <div className="flex justify-between items-center">
+                      <span className="text-green-600 font-bold text-lg">
+                        {product.price}
+                      </span>
+                      <button className="bg-cardiac-red text-white px-4 py-2 rounded text-sm font-semibold hover:bg-cardiac-dark transition-colors">
+                        View Details
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Image Modal */}
+      {showImageModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4">
+          <div className="relative max-w-4xl max-h-full">
+            <button
+              onClick={closeImageModal}
+              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors"
+            >
+              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <img
+              src={images[selectedImage]}
+              alt={`${medication.name} - Full View`}
+              className="max-w-full max-h-screen object-contain"
+              onError={(e) => handleImageError(e, medication.name)}
+            />
+            {images.length > 1 && (
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                {images.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setSelectedImage(index)}
+                    className={`w-3 h-3 rounded-full transition-colors ${
+                      selectedImage === index ? 'bg-white' : 'bg-white bg-opacity-50'
+                    }`}
+                  />
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default ProductDetail;
