@@ -1,0 +1,4065 @@
+{
+  "product":{
+
+  "tablets": [
+    {
+      "id": 1,
+      "name": "Omez 20mg",
+      "description": "Long-lasting PPI for acidity and GERD.",
+      "medicine_type": "PPI",
+      "uses": ["GERD", "Acid reflux", "Ulcer"],
+      "images": "assets/StomachCare/Omez.png",      
+      "cost": 85,
+      "discount": 20,
+      "final_price": 74.8,
+      "manufacturer": "Dr. Reddy's",
+      "stock": 140,
+      "rating": 4.7,
+
+      "highlights": {
+        "product_type": "Tablet",
+        "pack_size": "1 strip (10 tablets)",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Use as directed by physician.",
+        "usage_instruction": "Take 1 tablet before breakfast."
+      },
+
+      "brand": "Medicare",
+      "material_type_free": "Chemical based formulation",
+      "ingredients": ["Omeprazole"],
+      "bio_friendly": "Yes",
+      "exemption_type": "None",
+      "net_quantity": "10 tablets",
+      "weight": "10 tablets",
+      "packaging_type": "Strip",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "Medicare Pharmacy",
+      "seller_address": "123 Medical Street, Hyderabad, India",
+      "seller_license": "MED2025HYD001",
+      "manufactured_by": "Medicare Labs Pvt Ltd",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 2,
+      "name": "Pantop 40mg",
+      "description": "Pantoprazole for reflux and acidity.",
+      "medicine_type": "PPI",
+      "uses": ["GERD", "Ulcer"],
+      "images": "/assets/StomachCare/pantop.png",
+      "cost": 75,
+      "discount": 10,
+      "final_price": 67.5,
+      "manufacturer": "Aristo",
+      "stock": 190,
+      "rating": 4.6,
+
+      "highlights": {
+        "product_type": "Tablet",
+        "pack_size": "1 strip (10 tablets)",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Consult doctor if symptoms persist.",
+        "usage_instruction": "Take 1 tablet daily before meals."
+      },
+
+      "brand": "Medicare",
+      "material_type_free": "Chemical based formulation",
+      "ingredients": ["Pantoprazole"],
+      "bio_friendly": "Yes",
+      "exemption_type": "None",
+      "net_quantity": "10 tablets",
+      "weight": "10 tablets",
+      "packaging_type": "Strip",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "Medicare Pharmacy",
+      "seller_address": "123 Medical Street, Hyderabad, India",
+      "seller_license": "MED2025HYD001",
+      "manufactured_by": "Medicare Labs Pvt Ltd",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 3,
+      "name": "Zentac 150",
+      "description": "H2 blocker for acidity and heartburn.",
+      "medicine_type": "H2 Blocker",
+      "uses": ["Heartburn", "Acidity"],
+      "images": "/assets/StomachCare/zentac.png",
+      "cost": 55,
+      "discount": 15,
+      "final_price": 46.75,
+      "manufacturer": "Zydus",
+      "stock": 180,
+      "rating": 4.3,
+
+      "highlights": {
+        "product_type": "Tablet",
+        "pack_size": "1 strip (14 tablets)",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Short-term use recommended.",
+        "usage_instruction": "Take 1 tablet when acidity occurs."
+      },
+
+      "brand": "Medicare",
+      "material_type_free": "Chemical based formulation",
+      "ingredients": ["Ranitidine"],
+      "bio_friendly": "Yes",
+      "exemption_type": "None",
+      "net_quantity": "14 tablets",
+      "weight": "14 tablets",
+      "packaging_type": "Strip",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "Medicare Pharmacy",
+      "seller_address": "123 Medical Street, Hyderabad, India",
+      "seller_license": "MED2025HYD001",
+      "manufactured_by": "Medicare Labs Pvt Ltd",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 4,
+      "name": "Domstal 10mg",
+      "description": "Domperidone for nausea and motility.",
+      "medicine_type": "Prokinetic",
+      "uses": ["Nausea", "Gastroparesis"],
+      "images": "/assets/StomachCare/domstal.png",
+      "cost": 65,
+      "discount": 8,
+      "final_price": 59.8,
+      "manufacturer": "Torrent",
+      "stock": 155,
+      "rating": 4.5,
+
+      "highlights": {
+        "product_type": "Tablet",
+        "pack_size": "1 strip (10 tablets)",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "May cause drowsiness.",
+        "usage_instruction": "Take before food."
+      },
+
+      "brand": "Medicare",
+      "material_type_free": "Chemical based formulation",
+      "ingredients": ["Domperidone"],
+      "bio_friendly": "Yes",
+      "exemption_type": "None",
+      "net_quantity": "10 tablets",
+      "weight": "10 tablets",
+      "packaging_type": "Strip",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "Medicare Pharmacy",
+      "seller_address": "123 Medical Street, Hyderabad, India",
+      "seller_license": "MED2025HYD001",
+      "manufactured_by": "Medicare Labs Pvt Ltd",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 5,
+      "name": "Mebeverine 135mg",
+      "description": "Antispasmodic for IBS cramps.",
+      "medicine_type": "Antispasmodic",
+      "uses": ["IBS", "Stomach cramps"],
+      "images": "/assets/StomachCare/mebeverine.png",
+      "cost": 60,
+      "discount": 10,
+      "final_price": 54,
+      "manufacturer": "Dr. Reddy's",
+      "stock": 125,
+      "rating": 4.5,
+
+      "highlights": {
+        "product_type": "Tablet",
+        "pack_size": "1 strip (10 tablets)",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Use as directed.",
+        "usage_instruction": "Take after meals."
+      },
+
+      "brand": "Medicare",
+      "material_type_free": "Chemical based formulation",
+      "ingredients": ["Mebeverine"],
+      "bio_friendly": "Yes",
+      "exemption_type": "None",
+      "net_quantity": "10 tablets",
+      "weight": "10 tablets",
+      "packaging_type": "Strip",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "Medicare Pharmacy",
+      "seller_address": "123 Medical Street, Hyderabad, India",
+      "seller_license": "MED2025HYD001",
+      "manufactured_by": "Medicare Labs Pvt Ltd",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 6,
+      "name": "Loperamide 2mg",
+      "description": "Anti-diarrheal for loose motion.",
+      "medicine_type": "Anti-diarrheal",
+      "uses": ["Diarrhea"],
+      "images": "/assets/StomachCare/loperamide.png",
+      "cost": 40,
+      "discount": 10,
+      "final_price": 36,
+      "manufacturer": "Sun Pharma",
+      "stock": 210,
+      "rating": 4.3,
+
+      "highlights": {
+        "product_type": "Tablet",
+        "pack_size": "1 strip (6 tablets)",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Not for children under 6.",
+        "usage_instruction": "Take 1 tablet after each loose stool."
+      },
+
+      "brand": "Medicare",
+      "material_type_free": "Chemical",
+      "ingredients": ["Loperamide"],
+      "bio_friendly": "Yes",
+      "exemption_type": "None",
+      "net_quantity": "6 tablets",
+      "weight": "6 tablets",
+      "packaging_type": "Strip",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "Medicare Pharmacy",
+      "seller_address": "123 Medical Street, Hyderabad, India",
+      "seller_license": "MED2025HYD001",
+      "manufactured_by": "Medicare Labs Pvt Ltd",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 7,
+      "name": "Norflox-LB",
+      "description": "Probiotic + antibiotic recovery tablet.",
+      "medicine_type": "Probiotic",
+      "uses": ["Post-diarrhea", "Gut flora"],
+      "images": "/assets/StomachCare/probiotic.png",
+      "cost": 55,
+      "discount": 5,
+      "final_price": 52.25,
+      "manufacturer": "MacLeods",
+      "stock": 300,
+      "rating": 4.6,
+
+      "highlights": {
+        "product_type": "Tablet",
+        "pack_size": "1 strip (10 tablets)",
+        "shelf_life": "18 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "For gut health support.",
+        "usage_instruction": "Take after meals."
+      },
+
+      "brand": "Medicare",
+      "material_type_free": "Chemical",
+      "ingredients": ["Lactobacillus", "Norfloxacin"],
+      "bio_friendly": "Yes",
+      "exemption_type": "None",
+      "net_quantity": "10 tablets",
+      "weight": "10 tablets",
+      "packaging_type": "Strip",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "Medicare Pharmacy",
+      "seller_address": "123 Medical Street, Hyderabad, India",
+      "seller_license": "MED2025HYD001",
+      "manufactured_by": "Medicare Labs Pvt Ltd",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 8,
+      "name": "Digestive Enzyme Tablet",
+      "description": "Enzyme support for digestion.",
+      "medicine_type": "Digestive Enzyme",
+      "uses": ["Indigestion", "Bloating"],
+      "images": "/assets/StomachCare/pancreatin.png",
+      "cost": 95,
+      "discount": 10,
+      "final_price": 85.5,
+      "manufacturer": "Macleods",
+      "stock": 140,
+      "rating": 4.5,
+
+      "highlights": {
+        "product_type": "Tablet",
+        "pack_size": "1 strip (10 tablets)",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "For digestive support.",
+        "usage_instruction": "Take after meals."
+      },
+
+      "brand": "Medicare",
+      "material_type_free": "Chemical",
+      "ingredients": ["Pancreatin"],
+      "bio_friendly": "Yes",
+      "exemption_type": "None",
+      "net_quantity": "10 tablets",
+      "weight": "10 tablets",
+      "packaging_type": "Strip",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "Medicare Pharmacy",
+      "seller_address": "123 Medical Street, Hyderabad, India",
+      "seller_license": "MED2025HYD001",
+      "manufactured_by": "Medicare Labs Pvt Ltd",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 9,
+      "name": "Gelusil Chewable",
+      "description": "Fast gas & acidity relief chewable.",
+      "medicine_type": "Antacid (chewable)",
+      "uses": ["Acidity", "Gas"],
+      "images": "/assets/StomachCare/gelusil-chew.png",
+      "cost": 98,
+      "discount": 5,
+      "final_price": 93.1,
+      "manufacturer": "Pfizer",
+      "stock": 200,
+      "rating": 4.5,
+
+      "highlights": {
+        "product_type": "Chewable tablet",
+        "pack_size": "1 pouch (12 chewable tablets)",
+        "shelf_life": "18 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "For temporary relief.",
+        "usage_instruction": "Chew 1–2 tablets as needed."
+      },
+
+      "brand": "Medicare",
+      "material_type_free": "Chemical",
+      "ingredients": ["Aluminium hydroxide", "Magnesium hydroxide", "Simethicone"],
+      "bio_friendly": "Yes",
+      "exemption_type": "None",
+      "net_quantity": "12 tablets",
+      "weight": "12 tablets",
+      "packaging_type": "Pouch",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "Medicare Pharmacy",
+      "seller_address": "123 Medical Street, Hyderabad, India",
+      "seller_license": "MED2025HYD001",
+      "manufactured_by": "Medicare Labs Pvt Ltd",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 10,
+      "name": "Meftal (Mefenamic acid)",
+      "description": "Pain + spasm relief.",
+      "medicine_type": "Analgesic/Antispasmodic",
+      "uses": ["Cramp pain"],
+      "images": "/assets/StomachCare/meftal.png",
+      "cost": 50,
+      "discount": 5,
+      "final_price": 47.5,
+      "manufacturer": "Blue Cross",
+      "stock": 250,
+      "rating": 4.4,
+
+      "highlights": {
+        "product_type": "Tablet",
+        "pack_size": "1 strip (10 tablets)",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "For pain and cramps.",
+        "usage_instruction": "Take after meals."
+      },
+
+      "brand": "Medicare",
+      "material_type_free": "Chemical",
+      "ingredients": ["Mefenamic acid"],
+      "bio_friendly": "Yes",
+      "exemption_type": "None",
+      "net_quantity": "10 tablets",
+      "weight": "10 tablets",
+      "packaging_type": "Strip",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "Medicare Pharmacy",
+      "seller_address": "123 Medical Street, Hyderabad, India",
+      "seller_license": "MED2025HYD001",
+      "manufactured_by": "Medicare Labs Pvt Ltd",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 11,
+      "name": "Isabgol Tablet",
+      "description": "Fiber for constipation relief.",
+      "medicine_type": "Fiber Supplement",
+      "uses": ["Constipation"],
+      "images": "/assets/StomachCare/isabgol-tablet.png",
+      "cost": 120,
+      "discount": 5,
+      "final_price": 114,
+      "manufacturer": "Satyam",
+      "stock": 170,
+      "rating": 4.6,
+
+      "highlights": {
+        "product_type": "Tablet",
+        "pack_size": "1 bottle (30 tablets)",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Drink plenty of water.",
+        "usage_instruction": "Take 1–2 tablets at night."
+      },
+
+      "brand": "Medicare",
+      "material_type_free": "Plant based",
+      "ingredients": ["Psyllium husk"],
+      "bio_friendly": "Yes",
+      "exemption_type": "None",
+      "net_quantity": "30 tablets",
+      "weight": "30 tablets",
+      "packaging_type": "Bottle",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "Medicare Pharmacy",
+      "seller_address": "123 Medical Street, Hyderabad, India",
+      "seller_license": "MED2025HYD001",
+      "manufactured_by": "Medicare Labs Pvt Ltd",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 12,
+      "name": "Simethicone 40mg",
+      "description": "Gas and bloating relief.",
+      "medicine_type": "Anti-foaming",
+      "uses": ["Gas", "Bloating"],
+      "images": "/assets/StomachCare/simethicone.png",
+      "cost": 30,
+      "discount": 0,
+      "final_price": 30,
+      "manufacturer": "GSK",
+      "stock": 320,
+      "rating": 4.2,
+
+      "highlights": {
+        "product_type": "Tablet",
+        "pack_size": "1 strip (10 tablets)",
+        "shelf_life": "18 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Safe for adults.",
+        "usage_instruction": "Take after meals."
+      },
+
+      "brand": "Medicare",
+      "material_type_free": "Chemical",
+      "ingredients": ["Simethicone"],
+      "bio_friendly": "Yes",
+      "exemption_type": "None",
+      "net_quantity": "10 tablets",
+      "weight": "10 tablets",
+      "packaging_type": "Strip",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "Medicare Pharmacy",
+      "seller_address": "123 Medical Street, Hyderabad, India",
+      "seller_license": "MED2025HYD001",
+      "manufactured_by": "Medicare Labs Pvt Ltd",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 13,
+      "name": "Pantoprazole + Domperidone",
+      "description": "Combo for GERD + slow digestion.",
+      "medicine_type": "Combo (PPI+Prokinetic)",
+      "uses": ["GERD", "Delayed emptying"],
+      "images": "/assets/StomachCare/panto-domperone-combo.png",
+      "cost": 120,
+      "discount": 12,
+      "final_price": 105.6,
+      "manufacturer": "Generic",
+      "stock": 90,
+      "rating": 4.6,
+
+      "highlights": {
+        "product_type": "Tablet",
+        "pack_size": "1 strip (10 tablets)",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "May cause dizziness.",
+        "usage_instruction": "Take before meals."
+      },
+
+      "brand": "Medicare",
+      "material_type_free": "Chemical",
+      "ingredients": ["Pantoprazole", "Domperidone"],
+      "bio_friendly": "Yes",
+      "exemption_type": "None",
+      "net_quantity": "10 tablets",
+      "weight": "10 tablets",
+      "packaging_type": "Strip",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "Medicare Pharmacy",
+      "seller_address": "123 Medical Street, Hyderabad, India",
+      "seller_license": "MED2025HYD001",
+      "manufactured_by": "Medicare Labs Pvt Ltd",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 14,
+      "name": "Racecadotril 100mg",
+      "description": "Anti-diarrheal that prevents dehydration.",
+      "medicine_type": "Anti-diarrheal",
+      "uses": ["Acute diarrhea"],
+      "images": "/assets/StomachCare/racecadotril.png",
+      "cost": 75,
+      "discount": 5,
+      "final_price": 71.25,
+      "manufacturer": "Aristo",
+      "stock": 170,
+      "rating": 4.5,
+
+      "highlights": {
+        "product_type": "Tablet",
+        "pack_size": "1 strip (10 tablets)",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Keep hydrated.",
+        "usage_instruction": "Take 1 tablet thrice daily."
+      },
+
+      "brand": "Medicare",
+      "material_type_free": "Chemical",
+      "ingredients": ["Racecadotril"],
+      "bio_friendly": "Yes",
+      "exemption_type": "None",
+      "net_quantity": "10 tablets",
+      "weight": "10 tablets",
+      "packaging_type": "Strip",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "Medicare Pharmacy",
+      "seller_address": "123 Medical Street, Hyderabad, India",
+      "seller_license": "MED2025HYD001",
+      "manufactured_by": "Medicare Labs Pvt Ltd",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 15,
+      "name": "Ondansetron 4mg",
+      "description": "Fast nausea and vomiting control.",
+      "medicine_type": "Antiemetic",
+      "uses": ["Nausea", "Vomiting"],
+      "images": "/assets/StomachCare/ondansetron.png",
+      "cost": 55,
+      "discount": 5,
+      "final_price": 52.25,
+      "manufacturer": "Cipla",
+      "stock": 250,
+      "rating": 4.8,
+
+      "highlights": {
+        "product_type": "Tablet",
+        "pack_size": "1 strip (10 tablets)",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Use only when needed.",
+        "usage_instruction": "1 tablet during nausea episodes."
+      },
+
+      "brand": "Medicare",
+      "material_type_free": "Chemical",
+      "ingredients": ["Ondansetron"],
+      "bio_friendly": "Yes",
+      "exemption_type": "None",
+      "net_quantity": "10 tablets",
+      "weight": "10 tablets",
+      "packaging_type": "Strip",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "Medicare Pharmacy",
+      "seller_address": "123 Medical Street, Hyderabad, India",
+      "seller_license": "MED2025HYD001",
+      "manufactured_by": "Medicare Labs Pvt Ltd",
+      "country_of_origin": "India"
+    }
+  ],
+
+
+"powders": [
+  {
+    "id": 16,
+    "name": "ENO Fruit Salt (Powder Sachet)",
+    "description": "Instant antacid powder to neutralize stomach acid fast; single-use sachet.",
+    "medicine_type": "Antacid Powder",
+    "uses": ["Acidity", "Bloating"],
+    "images": "/assets/StomachCare/eno-sachet.png",
+    "cost": 10.0,
+    "discount": 0,
+    "final_price": 10.0,
+    "manufacturer": "GSK",
+    "stock": 1200,
+    "rating": 4.5,
+
+    "highlights": {
+      "product_type": "Powder Sachet",
+      "pack_size": "1 sachet (5g)",
+      "shelf_life": "18 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "For temporary relief only. Not for long-term use.",
+      "usage_instruction": "Mix entire sachet in water and drink immediately."
+    },
+
+    "brand": "Medicare",
+    "material_type_free": "Chemical based formulation",
+    "ingredients": ["Sodium bicarbonate", "Citric acid"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "1 sachet",
+    "weight": "5g",
+    "packaging_type": "Sachet",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Medicare Labs Pvt Ltd",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 17,
+    "name": "ORS Hydration Powder Sachet",
+    "description": "Oral Rehydration Salts for electrolyte replacement during diarrhea and vomiting.",
+    "medicine_type": "ORS",
+    "uses": ["Dehydration", "Diarrhea"],
+    "images": "/assets/StomachCare/ors.png",
+    "cost": 20.0,
+    "discount": 0,
+    "final_price": 20.0,
+    "manufacturer": "WHO Formula",
+    "stock": 800,
+    "rating": 4.8,
+
+    "highlights": {
+      "product_type": "ORS Powder",
+      "pack_size": "1 sachet (21g)",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "WHO recommended formulation for dehydration.",
+      "usage_instruction": "Mix contents in 200ml clean water and drink gradually."
+    },
+
+    "brand": "Medicare",
+    "material_type_free": "Electrolyte mixture",
+    "ingredients": ["Glucose", "Sodium chloride", "Potassium chloride"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "1 sachet",
+    "weight": "21g",
+    "packaging_type": "Sachet",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Medicare Labs Pvt Ltd",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 18,
+    "name": "Gastrolyte ORS Powder",
+    "description": "Glucose-based hydration powder for dehydration and diarrhea relief.",
+    "medicine_type": "ORS",
+    "uses": ["Dehydration", "Diarrhea", "Vomiting"],
+    "images": "/assets/StomachCare/gastrolyte.png",
+    "cost": 22.0,
+    "discount": 0,
+    "final_price": 22.0,
+    "manufacturer": "Pfizer",
+    "stock": 700,
+    "rating": 4.7,
+
+    "highlights": {
+      "product_type": "ORS Powder",
+      "pack_size": "1 sachet (20g)",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Prepare fresh solution each time.",
+      "usage_instruction": "Dissolve in 200ml clean water and sip slowly."
+    },
+
+    "brand": "Medicare",
+    "material_type_free": "Electrolyte and glucose blend",
+    "ingredients": ["Glucose", "Electrolytes"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "1 sachet",
+    "weight": "20g",
+    "packaging_type": "Sachet",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Medicare Labs Pvt Ltd",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 19,
+    "name": "Electral Powder",
+    "description": "WHO-recommended ORS powder for dehydration and electrolyte imbalance.",
+    "medicine_type": "ORS",
+    "uses": ["Dehydration", "Loose motion"],
+    "images": "/assets/StomachCare/electral.png",
+    "cost": 21.0,
+    "discount": 0,
+    "final_price": 21.0,
+    "manufacturer": "FDC Ltd",
+    "stock": 900,
+    "rating": 4.8,
+
+    "highlights": {
+      "product_type": "ORS Powder",
+      "pack_size": "1 sachet (21g)",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Use only as directed for dehydration.",
+      "usage_instruction": "Mix in 200ml boiled/cooled water and consume."
+    },
+
+    "brand": "Medicare",
+    "material_type_free": "Electrolyte mixture",
+    "ingredients": ["Glucose", "Sodium chloride", "Potassium"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "1 sachet",
+    "weight": "21g",
+    "packaging_type": "Sachet",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Medicare Labs Pvt Ltd",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 20,
+    "name": "Digene Powder",
+    "description": "Antacid powder for quick relief from acidity and stomach burning.",
+    "medicine_type": "Antacid Powder",
+    "uses": ["Acidity", "Heartburn"],
+    "images": "/assets/StomachCare/digene.png",
+    "cost": 65.0,
+    "discount": 10,
+    "final_price": 58.5,
+    "manufacturer": "Abbott",
+    "stock": 400,
+    "rating": 4.6,
+
+    "highlights": {
+      "product_type": "Antacid Powder",
+      "pack_size": "130g bottle",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Not suitable for kidney patients without advice.",
+      "usage_instruction": "Take 1 teaspoon with water after meals."
+    },
+
+    "brand": "Medicare",
+    "material_type_free": "Chemical formulation",
+    "ingredients": ["Aluminium hydroxide", "Magnesium hydroxide"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "130g",
+    "weight": "130g",
+    "packaging_type": "Bottle",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Medicare Labs Pvt Ltd",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 21,
+    "name": "Gelmix Antacid Powder",
+    "description": "Neutralizing stomach acid powder used for sour stomach and bloating.",
+    "medicine_type": "Antacid Powder",
+    "uses": ["Acidity", "Gas"],
+    "images": "/assets/StomachCare/gelmix.png",
+    "cost": 55.0,
+    "discount": 5,
+    "final_price": 52.25,
+    "manufacturer": "Glenmark",
+    "stock": 350,
+    "rating": 4.3,
+
+    "highlights": {
+      "product_type": "Antacid Powder",
+      "pack_size": "100g bottle",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "May interact with some medications.",
+      "usage_instruction": "Take 1 teaspoon mixed in water."
+    },
+
+    "brand": "Medicare",
+    "material_type_free": "Chemical mixture",
+    "ingredients": ["Magnesium hydroxide"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "100g",
+    "weight": "100g",
+    "packaging_type": "Bottle",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Medicare Labs Pvt Ltd",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 22,
+    "name": "Isabgol Husk Powder",
+    "description": "Fiber-rich powder to treat constipation and promote bowel regularity.",
+    "medicine_type": "Fiber Supplement",
+    "uses": ["Constipation", "Digestive health"],
+    "images": "/assets/StomachCare/isabgol.png",
+    "cost": 140.0,
+    "discount": 5,
+    "final_price": 133.0,
+    "manufacturer": "Satyam",
+    "stock": 300,
+    "rating": 4.7,
+
+    "highlights": {
+      "product_type": "Fiber Powder",
+      "pack_size": "100g bottle",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Drink plenty of water when using fiber supplements.",
+      "usage_instruction": "Mix 1-2 teaspoons in warm water before bedtime."
+    },
+
+    "brand": "Medicare",
+    "material_type_free": "Natural fiber",
+    "ingredients": ["Psyllium husk"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "100g",
+    "weight": "100g",
+    "packaging_type": "Bottle",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Medicare Labs Pvt Ltd",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 23,
+    "name": "Triphala Churna",
+    "description": "Ayurvedic digestive powder that helps relieve constipation and promote gut cleansing.",
+    "medicine_type": "Ayurvedic Powder",
+    "uses": ["Constipation", "Detox", "Digestion"],
+    "images": "/assets/StomachCare/triphala.png",
+    "cost": 90.0,
+    "discount": 5,
+    "final_price": 85.5,
+    "manufacturer": "Patanjali",
+    "stock": 250,
+    "rating": 4.5,
+
+    "highlights": {
+      "product_type": "Ayurvedic Powder",
+      "pack_size": "100g pouch",
+      "shelf_life": "36 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Herbal product; consult doctor if pregnant.",
+      "usage_instruction": "Take 1 teaspoon with warm water before bedtime."
+    },
+
+    "brand": "Patanjali",
+    "material_type_free": "Herbal formulation",
+    "ingredients": ["Triphala"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "100g",
+    "weight": "100g",
+    "packaging_type": "Pouch",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Medicare Labs Pvt Ltd",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 24,
+    "name": "Hingvastak Churna",
+    "description": "Ayurvedic powder for gas, bloating, and indigestion.",
+    "medicine_type": "Ayurvedic Digestive",
+    "uses": ["Gas", "Indigestion"],
+    "images": "/assets/StomachCare/hingvastak.png",
+    "cost": 110.0,
+    "discount": 10,
+    "final_price": 99.0,
+    "manufacturer": "Baidyanath",
+    "stock": 180,
+    "rating": 4.6,
+
+    "highlights": {
+      "product_type": "Ayurvedic Powder",
+      "pack_size": "100g pouch",
+      "shelf_life": "36 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Contains spices; avoid during ulcers.",
+      "usage_instruction": "Take 1/2 teaspoon with warm water after meals."
+    },
+
+    "brand": "Baidyanath",
+    "material_type_free": "Herbal blend",
+    "ingredients": ["Hing", "Herbal spices"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "100g",
+    "weight": "100g",
+    "packaging_type": "Pouch",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Medicare Labs Pvt Ltd",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 26,
+    "name": "ORS Apple Flavour Powder",
+    "description": "Flavored ORS for hydration during vomiting and diarrhea.",
+    "medicine_type": "ORS",
+    "uses": ["Diarrhea", "Vomiting"],
+    "images": "/assets/StomachCare/ors-apple.png",
+    "cost": 18.0,
+    "discount": 0,
+    "final_price": 18.0,
+    "manufacturer": "Cipla",
+    "stock": 500,
+    "rating": 4.6,
+
+    "highlights": {
+      "product_type": "ORS Powder",
+      "pack_size": "1 sachet (20g)",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Use for dehydration only.",
+      "usage_instruction": "Mix in 200ml clean water and consume slowly."
+    },
+
+    "brand": "Cipla",
+    "material_type_free": "Electrolyte blend",
+    "ingredients": ["Electrolytes", "Glucose", "Flavour"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "1 sachet",
+    "weight": "20g",
+    "packaging_type": "Sachet",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Medicare Labs Pvt Ltd",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 27,
+    "name": "ORS Lemon Powder",
+    "description": "Electrolyte replenisher for dehydration and vomiting.",
+    "medicine_type": "ORS",
+    "uses": ["Dehydration", "Vomiting"],
+    "images": "/assets/StomachCare/ors-lemon.png",
+    "cost": 20.0,
+    "discount": 0,
+    "final_price": 20.0,
+    "manufacturer": "Abbott",
+    "stock": 550,
+    "rating": 4.7,
+
+    "highlights": {
+      "product_type": "ORS Powder",
+      "pack_size": "1 sachet (20g)",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Store in a cool dry place.",
+      "usage_instruction": "Mix contents in 200ml of clean water."
+    },
+
+    "brand": "Abbott",
+    "material_type_free": "Electrolyte blend",
+    "ingredients": ["Sodium chloride", "Potassium chloride", "Glucose"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "1 sachet",
+    "weight": "20g",
+    "packaging_type": "Sachet",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Medicare Labs Pvt Ltd",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 28,
+    "name": "ORS Zinc + Electrolyte Powder",
+    "description": "Zinc-enriched ORS that supports immunity and reduces diarrhea severity.",
+    "medicine_type": "ORS + Zinc",
+    "uses": ["Diarrhea", "Dehydration"],
+    "images": "/assets/StomachCare/zinc-ors.png",
+    "cost": 28.0,
+    "discount": 0,
+    "final_price": 28.0,
+    "manufacturer": "Sun Pharma",
+    "stock": 400,
+    "rating": 4.8,
+
+    "highlights": {
+      "product_type": "ORS + Zinc",
+      "pack_size": "1 sachet (20g)",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Zinc improves gut recovery during diarrhea.",
+      "usage_instruction": "Mix with water and consume in small sips."
+    },
+
+    "brand": "Sun Pharma",
+    "material_type_free": "Electrolyte and zinc mix",
+    "ingredients": ["Zinc", "Glucose", "Electrolytes"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "1 sachet",
+    "weight": "20g",
+    "packaging_type": "Sachet",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Medicare Labs Pvt Ltd",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 29,
+    "name": "Pudina Churna Powder",
+    "description": "Cooling digestive powder made from mint for gas and indigestion.",
+    "medicine_type": "Ayurvedic Digestive Powder",
+    "uses": ["Gas", "Indigestion", "Bloating"],
+    "images": "/assets/StomachCare/pudina-churna.png",
+    "cost": 85.0,
+    "discount": 5,
+    "final_price": 80.75,
+    "manufacturer": "Patanjali",
+    "stock": 240,
+    "rating": 4.6,
+
+    "highlights": {
+      "product_type": "Ayurvedic Digestive Powder",
+      "pack_size": "100g pouch",
+      "shelf_life": "36 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Herbal digestive; safe for daily use.",
+      "usage_instruction": "Take 1 teaspoon after meals."
+    },
+
+    "brand": "Patanjali",
+    "material_type_free": "Herbal formulation",
+    "ingredients": ["Mint leaf powder"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "100g",
+    "weight": "100g",
+    "packaging_type": "Pouch",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Medicare Labs Pvt Ltd",
+    "country_of_origin": "India"
+  }
+],
+
+"syrups": [
+  {
+    "id": 30,
+    "name": "Gaviscon Liquid (Syrup)",
+    "description": "Forms a barrier to reflux and soothes heartburn and regurgitation.",
+    "medicine_type": "Alginate Antacid (syrup)",
+    "uses": ["GERD symptoms", "Heartburn"],
+    "images": "/assets/StomachCare/gaviscon.png",
+    "cost": 165.0,
+    "discount": 8,
+    "final_price": 151.8,
+    "manufacturer": "Reckitt",
+    "stock": 95,
+    "rating": 4.6,
+
+    "highlights": {
+      "product_type": "Syrup",
+      "pack_size": "150 ml bottle",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Not recommended for patients with severe kidney issues.",
+      "usage_instruction": "Consume 1-2 teaspoons after meals or as directed."
+    },
+
+    "brand": "Medicare",
+    "material_type_free": "Alcohol-free",
+    "ingredients": ["Sodium alginate", "Calcium carbonate"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "150 ml",
+    "weight": "200g",
+    "packaging_type": "Bottle",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Road, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Reckitt Healthcare Pvt Ltd",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 31,
+    "name": "Aristozyme Syrup (Digestive Enzyme)",
+    "description": "Digestive enzyme syrup for bloating and indigestion in children and adults.",
+    "medicine_type": "Digestive Enzyme (syrup)",
+    "uses": ["Indigestion", "Bloating"],
+    "images": "/assets/StomachCare/aristozyme.png",
+    "cost": 110.0,
+    "discount": 10,
+    "final_price": 99.0,
+    "manufacturer": "Aristo",
+    "stock": 140,
+    "rating": 4.5,
+
+    "highlights": {
+      "product_type": "Digestive Syrup",
+      "pack_size": "200 ml bottle",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Use cautiously if diabetic.",
+      "usage_instruction": "Take 1 teaspoon twice daily after meals."
+    },
+
+    "brand": "Aristo",
+    "material_type_free": "Alcohol-free",
+    "ingredients": ["Diastase", "Pepsin"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "200 ml",
+    "weight": "250g",
+    "packaging_type": "Bottle",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Road, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Aristo Pharmaceuticals",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 31,
+    "name": "Sucralfate Oral Suspension",
+    "description": "Mucosal protective liquid for ulcers and gastritis.",
+    "medicine_type": "Anti-ulcer (suspension)",
+    "uses": ["Ulcers", "Gastritis"],
+    "images": "/assets/StomachCare/sucralfate-susp.png",
+    "cost": 175.0,
+    "discount": 10,
+    "final_price": 157.5,
+    "manufacturer": "Asian Pharma",
+    "stock": 80,
+    "rating": 4.7,
+
+    "highlights": {
+      "product_type": "Oral Suspension",
+      "pack_size": "200 ml bottle",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Shake well before use.",
+      "usage_instruction": "Take 1 tablespoon before meals or as prescribed."
+    },
+
+    "brand": "Medicare",
+    "material_type_free": "No artificial flavors",
+    "ingredients": ["Sucralfate"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "200 ml",
+    "weight": "250g",
+    "packaging_type": "Bottle",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Road, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Asian Pharma",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 32,
+    "name": "Pudin Hara Liquid",
+    "description": "Ayurvedic cooling liquid to ease gas and stomach discomfort.",
+    "medicine_type": "Ayurvedic (syrup)",
+    "uses": ["Gas", "Indigestion"],
+    "images": "/assets/StomachCare/pudinhara.png",
+    "cost": 45.0,
+    "discount": 5,
+    "final_price": 42.75,
+    "manufacturer": "Dabur",
+    "stock": 300,
+    "rating": 4.6,
+
+    "highlights": {
+      "product_type": "Ayurvedic Liquid",
+      "pack_size": "30 ml bottle",
+      "shelf_life": "36 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Contains natural mint; avoid overdose.",
+      "usage_instruction": "Take 5–10 drops in water."
+    },
+
+    "brand": "Dabur",
+    "material_type_free": "100% herbal",
+    "ingredients": ["Mint", "Herbal oils"],
+    "bio_friendly": "Yes",
+    "exemption_type": "Ayurvedic product",
+    "net_quantity": "30 ml",
+    "weight": "40g",
+    "packaging_type": "Bottle",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Road, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Dabur India Ltd",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 33,
+    "name": "Digene Gel Syrup Mint",
+    "description": "Fast-acting liquid antacid gel for acidity and gas.",
+    "medicine_type": "Antacid Gel (syrup)",
+    "uses": ["Acidity", "Gas", "Heartburn"],
+    "images": "/assets/StomachCare/digene-gel.png",
+    "cost": 135.0,
+    "discount": 5,
+    "final_price": 128.25,
+    "manufacturer": "Abbott",
+    "stock": 160,
+    "rating": 4.4,
+
+    "highlights": {
+      "product_type": "Antacid Gel",
+      "pack_size": "200 ml bottle",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Do not take with other antacids at same time.",
+      "usage_instruction": "Take 2 teaspoons after food."
+    },
+
+    "brand": "Abbott",
+    "material_type_free": "Alcohol-free",
+    "ingredients": ["Magnesium hydroxide", "Simethicone"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "200 ml",
+    "weight": "250g",
+    "packaging_type": "Bottle",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Road, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Abbott Healthcare",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 34,
+    "name": "Colicaid Drops/Syrup",
+    "description": "Simethicone-based formula to relieve gas, colic, and discomfort in infants.",
+    "medicine_type": "Anti-gas (infant syrup)",
+    "uses": ["Gas", "Colic", "Bloating"],
+    "images": "/assets/StomachCare/colicaid.png",
+    "cost": 75.0,
+    "discount": 5,
+    "final_price": 71.25,
+    "manufacturer": "Abbott",
+    "stock": 200,
+    "rating": 4.7,
+
+    "highlights": {
+      "product_type": "Infant Drops/Syrup",
+      "pack_size": "30 ml bottle",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Use only for infants as directed.",
+      "usage_instruction": "5–10 drops after feeding."
+    },
+
+    "brand": "Abbott",
+    "material_type_free": "Sugar-free",
+    "ingredients": ["Simethicone"],
+    "bio_friendly": "Yes",
+    "exemption_type": "Pediatric formulation",
+    "net_quantity": "30 ml",
+    "weight": "40g",
+    "packaging_type": "Bottle",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Road, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Abbott Healthcare",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 35,
+    "name": "Looz Syrup",
+    "description": "Lactulose-based syrup used to treat chronic constipation.",
+    "medicine_type": "Laxative (syrup)",
+    "uses": ["Constipation"],
+    "images": "/assets/StomachCare/looz.png",
+    "cost": 165.0,
+    "discount": 8,
+    "final_price": 151.8,
+    "manufacturer": "Intas",
+    "stock": 90,
+    "rating": 4.5,
+
+    "highlights": {
+      "product_type": "Laxative Syrup",
+      "pack_size": "200 ml bottle",
+      "shelf_life": "30 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "May cause bloating initially.",
+      "usage_instruction": "Take 1–2 tablespoons daily."
+    },
+
+    "brand": "Intas",
+    "material_type_free": "Gluten-free",
+    "ingredients": ["Lactulose"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "200 ml",
+    "weight": "250g",
+    "packaging_type": "Bottle",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Road, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Intas Pharma",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 36,
+    "name": "Gastica Syrup",
+    "description": "Enzyme-rich syrup improving digestion and reducing bloating.",
+    "medicine_type": "Digestive Enzyme (syrup)",
+    "uses": ["Indigestion", "Gas"],
+    "images": "/assets/StomachCare/gastica.png",
+    "cost": 120.0,
+    "discount": 10,
+    "final_price": 108.0,
+    "manufacturer": "Mankind Pharma",
+    "stock": 130,
+    "rating": 4.4,
+
+    "highlights": {
+      "product_type": "Digestive Enzyme Syrup",
+      "pack_size": "200 ml bottle",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Not for diabetic patients without advice.",
+      "usage_instruction": "Take 1 teaspoon after meals."
+    },
+
+    "brand": "Mankind",
+    "material_type_free": "Alcohol-free",
+    "ingredients": ["Diastase", "Papain"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "200 ml",
+    "weight": "250g",
+    "packaging_type": "Bottle",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Road, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Mankind Pharma",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 37,
+    "name": "Gelusil Liquid",
+    "description": "Liquid antacid to neutralize acidity and relieve bloating.",
+    "medicine_type": "Antacid (syrup)",
+    "uses": ["Acidity", "Gas"],
+    "images": "/assets/StomachCare/gelusil.png",
+    "cost": 145.0,
+    "discount": 7,
+    "final_price": 134.85,
+    "manufacturer": "Pfizer",
+    "stock": 110,
+    "rating": 4.5,
+
+    "highlights": {
+      "product_type": "Antacid Liquid",
+      "pack_size": "200 ml bottle",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Avoid taking it with iron supplements.",
+      "usage_instruction": "Take 2 teaspoons after meals."
+    },
+
+    "brand": "Pfizer",
+    "material_type_free": "Alcohol-free",
+    "ingredients": ["Aluminium hydroxide", "Simethicone"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "200 ml",
+    "weight": "250g",
+    "packaging_type": "Bottle",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Road, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Pfizer Healthcare",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 38,
+    "name": "Zymnet Plus Syrup",
+    "description": "Digestive enzyme syrup supporting breakdown of proteins, carbs, and fats.",
+    "medicine_type": "Digestive Enzyme (syrup)",
+    "uses": ["Indigestion", "Heaviness", "Gas"],
+    "images": "/assets/StomachCare/zymnet-plus.png",
+    "cost": 115.0,
+    "discount": 10,
+    "final_price": 103.5,
+    "manufacturer": "Cipla",
+    "stock": 150,
+    "rating": 4.4,
+
+    "highlights": {
+      "product_type": "Digestive Enzyme Syrup",
+      "pack_size": "200 ml bottle",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Not suitable for children below 5 years.",
+      "usage_instruction": "Take 1 teaspoon after meals."
+    },
+
+    "brand": "Cipla",
+    "material_type_free": "Alcohol-free",
+    "ingredients": ["Papain", "Fungal diastase"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "200 ml",
+    "weight": "250g",
+    "packaging_type": "Bottle",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Road, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Cipla Ltd",
+    "country_of_origin": "India"
+  }
+],
+
+
+"ors": [
+  {
+    "id": 39,
+    "name": "Electral ORS",
+    "description": "WHO-recommended Oral Rehydration Salts to restore electrolytes and fluids lost during diarrhea or vomiting.",
+    "medicine_type": "ORS",
+    "uses": ["Diarrhea", "Dehydration", "Vomiting"],
+    "images": "/assets/StomachCare/electral2.png",
+    "cost": 21.0,
+    "discount": 0,
+    "final_price": 21.0,
+    "manufacturer": "FDC Ltd",
+    "stock": 900,
+    "rating": 4.8,
+
+    "highlights": {
+      "product_type": "ORS Powder",
+      "pack_size": "1 sachet",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Use immediately after mixing with water.",
+      "usage_instruction": "Dissolve entire sachet in 200 ml drinking water."
+    },
+
+    "brand": "Medicare",
+    "material_type_free": "Sugar-based formula",
+    "ingredients": ["Dextrose", "Sodium chloride", "Potassium chloride"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "1 sachet",
+    "weight": "21g",
+    "packaging_type": "Sachet",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "FDC Ltd",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 40,
+    "name": "ORS Hydration Powder (Standard)",
+    "description": "Balanced ORS formula for quick electrolyte replenishment and hydration.",
+    "medicine_type": "ORS",
+    "uses": ["Loose motion", "Vomiting", "Dehydration"],
+    "images": "/assets/StomachCare/ors-standard.png",
+    "cost": 20.0,
+    "discount": 0,
+    "final_price": 20.0,
+    "manufacturer": "WHO Formula",
+    "stock": 850,
+    "rating": 4.7,
+
+    "highlights": {
+      "product_type": "ORS Powder",
+      "pack_size": "1 sachet",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Use only freshly prepared solution.",
+      "usage_instruction": "Mix with 200 ml drinking water and consume within 24 hours."
+    },
+
+    "brand": "Medicare",
+    "material_type_free": "Preservative-free",
+    "ingredients": ["Dextrose", "Sodium chloride", "Trisodium citrate"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "1 sachet",
+    "weight": "20g",
+    "packaging_type": "Sachet",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "WHO Formula Manufacturer",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 41,
+    "name": "ORS Lemon Flavour",
+    "description": "Refreshing lemon-flavored electrolyte salt for dehydration and diarrhea.",
+    "medicine_type": "ORS",
+    "uses": ["Dehydration", "Heat exhaustion"],
+    "images": "/assets/StomachCare/ors-lemon.png",
+    "cost": 20.0,
+    "discount": 0,
+    "final_price": 20.0,
+    "manufacturer": "Abbott",
+    "stock": 650,
+    "rating": 4.7,
+
+    "highlights": {
+      "product_type": "Flavoured ORS Powder",
+      "pack_size": "1 sachet",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Not to be mixed with hot water.",
+      "usage_instruction": "Mix 1 sachet with 200 ml cold/room temp water."
+    },
+
+    "brand": "Abbott",
+    "material_type_free": "Artificial-color free",
+    "ingredients": ["Dextrose", "Citric acid", "Electrolytes"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "1 sachet",
+    "weight": "20g",
+    "packaging_type": "Sachet",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Abbott Healthcare",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 42,
+    "name": "ORS Apple Flavour",
+    "description": "Apple-flavored Oral Rehydration Salts for kids and adults to prevent dehydration.",
+    "medicine_type": "ORS",
+    "uses": ["Diarrhea", "Vomiting"],
+    "images": "/assets/StomachCare/ors-apple.png",
+    "cost": 18.0,
+    "discount": 0,
+    "final_price": 18.0,
+    "manufacturer": "Cipla",
+    "stock": 500,
+    "rating": 4.6,
+
+    "highlights": {
+      "product_type": "Flavoured ORS",
+      "pack_size": "1 sachet",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Keep away from direct sunlight.",
+      "usage_instruction": "Mix with 200 ml water and consume."
+    },
+
+    "brand": "Cipla",
+    "material_type_free": "Preservative-free",
+    "ingredients": ["Dextrose", "Electrolytes", "Apple flavour"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "1 sachet",
+    "weight": "18g",
+    "packaging_type": "Sachet",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Cipla Ltd",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 43,
+    "name": "ORS Orange Flavour",
+    "description": "Orange-flavored electrolyte mixture to replace fluids and salts during diarrhea.",
+    "medicine_type": "ORS",
+    "uses": ["Loose motion", "Dehydration"],
+    "images": "/assets/StomachCare/ors-orange.png",
+    "cost": 20.0,
+    "discount": 0,
+    "final_price": 20.0,
+    "manufacturer": "GSK",
+    "stock": 700,
+    "rating": 4.7,
+
+    "highlights": {
+      "product_type": "Flavoured ORS Powder",
+      "pack_size": "1 sachet",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Store in a cool, dry place.",
+      "usage_instruction": "Dissolve 1 sachet in 200 ml of drinking water."
+    },
+
+    "brand": "GSK",
+    "material_type_free": "Sugar-based formula",
+    "ingredients": ["Dextrose", "Electrolytes", "Orange flavour"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "1 sachet",
+    "weight": "20g",
+    "packaging_type": "Sachet",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "GSK Pharma",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 44,
+    "name": "ORS Zinc + Electrolyte",
+    "description": "Zinc-enriched ORS that shortens the duration of diarrhea and improves immunity.",
+    "medicine_type": "ORS + Zinc",
+    "uses": ["Diarrhea", "Dehydration"],
+    "images": "/assets/StomachCare/zinc-ors.png",
+    "cost": 28.0,
+    "discount": 0,
+    "final_price": 28.0,
+    "manufacturer": "Sun Pharma",
+    "stock": 480,
+    "rating": 4.8,
+
+    "highlights": {
+      "product_type": "ORS + Zinc Powder",
+      "pack_size": "1 sachet",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Not for children under 6 months.",
+      "usage_instruction": "Mix with 200 ml clean water and drink slowly."
+    },
+
+    "brand": "Sun Pharma",
+    "material_type_free": "No artificial sweeteners",
+    "ingredients": ["Zinc", "Dextrose", "Electrolytes"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "1 sachet",
+    "weight": "28g",
+    "packaging_type": "Sachet",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Sun Pharma Ltd",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 45,
+    "name": "ORS Glucose Energy Mix",
+    "description": "Instant glucose + electrolyte formula for dehydration, weakness, and recovery after diarrhea.",
+    "medicine_type": "ORS + Glucose",
+    "uses": ["Fatigue", "Loose motion"],
+    "images": "/assets/StomachCare/glucose-ors.png",
+    "cost": 25.0,
+    "discount": 0,
+    "final_price": 25.0,
+    "manufacturer": "Dabur",
+    "stock": 600,
+    "rating": 4.6,
+
+    "highlights": {
+      "product_type": "ORS + Glucose Powder",
+      "pack_size": "1 sachet",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Not suitable for diabetics.",
+      "usage_instruction": "Mix with 200 ml water; consume immediately."
+    },
+
+    "brand": "Dabur",
+    "material_type_free": "No synthetic colours",
+    "ingredients": ["Glucose", "Electrolytes"],
+    "bio_friendly": "Yes",
+    "exemption_type": "None",
+    "net_quantity": "1 sachet",
+    "weight": "25g",
+    "packaging_type": "Sachet",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Dabur India Ltd",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 46,
+    "name": "ORS Sports Electrolyte",
+    "description": "Electrolyte-rich sports ORS for athletes and dehydration due to heat and diarrhea.",
+    "medicine_type": "ORS + Electrolyte",
+    "uses": ["Dehydration", "Heat stroke", "Loose motion"],
+    "images": "/assets/StomachCare/sports-ors.png",
+    "cost": 30.0,
+    "discount": 0,
+    "final_price": 30.0,
+    "manufacturer": "Enerzal",
+    "stock": 420,
+    "rating": 4.7,
+
+    "highlights": {
+      "product_type": "Sports ORS Powder",
+      "pack_size": "1 sachet",
+      "shelf_life": "18 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Not for people with kidney issues.",
+      "usage_instruction": "Mix with 250 ml of water for best results."
+    },
+
+    "brand": "Enerzal",
+    "material_type_free": "No preservatives",
+    "ingredients": ["Electrolytes", "Glucose"],
+    "bio_friendly": "Yes",
+    "exemption_type": "Energy supplement",
+    "net_quantity": "1 sachet",
+    "weight": "30g",
+    "packaging_type": "Sachet",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Enerzal Pvt Ltd",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 47,
+    "name": "ORS Kids (Pediatric)",
+    "description": "Mild-flavored pediatric ORS for children with dehydration due to diarrhea.",
+    "medicine_type": "ORS (Kids)",
+    "uses": ["Pediatric dehydration", "Diarrhea"],
+    "images": "/assets/StomachCare/ors-kids.png",
+    "cost": 18.0,
+    "discount": 0,
+    "final_price": 18.0,
+    "manufacturer": "Pedicare",
+    "stock": 430,
+    "rating": 4.9,
+
+    "highlights": {
+      "product_type": "Kids ORS Powder",
+      "pack_size": "1 sachet",
+      "shelf_life": "18 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Pediatric use only.",
+      "usage_instruction": "Mix with 200 ml boiled & cooled water."
+    },
+
+    "brand": "Pedicare",
+    "material_type_free": "No artificial sweeteners",
+    "ingredients": ["Electrolytes", "Dextrose"],
+    "bio_friendly": "Yes",
+    "exemption_type": "Pediatric product",
+    "net_quantity": "1 sachet",
+    "weight": "18g",
+    "packaging_type": "Sachet",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad, India",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Pedicare Labs",
+    "country_of_origin": "India"
+  }
+
+]
+,
+
+"kids": [
+  {
+    "id": 48,
+    "name": "Colicaid Syrup",
+    "description": "Pediatric syrup with dill oil, fennel oil and simethicone to relieve infant colic, flatulence and stomach cramps.",
+    "medicine_type": "Antiflatulent (paediatric syrup)",
+    "uses": ["Infant colic", "Gas in baby", "Stomach cramps"],
+    "images": "/assets/StomachCare/colicaid.png",
+    "cost": 75.0,
+    "discount": 5,
+    "final_price": 71.25,
+    "manufacturer": "Meyer Organics",
+    "stock": 250,
+    "rating": 4.6,
+
+    "highlights": {
+      "product_type": "Paediatric Syrup",
+      "pack_size": "30 ml bottle",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Consult pediatrician if symptoms persist.",
+      "usage_instruction": "Give as directed on pack or by doctor."
+    },
+
+    "brand": "Meyer Organics",
+    "material_type_free": "Alcohol-free",
+    "ingredients": ["Dill oil", "Fennel oil", "Simethicone"],
+    "bio_friendly": "Yes",
+    "exemption_type": "Paediatric product",
+    "net_quantity": "30 ml",
+    "weight": "30 ml",
+    "packaging_type": "Bottle",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "KidsCare Pharmacy",
+    "seller_address": "123 Child Wellness Street, Hyderabad",
+    "seller_license": "KIDMED2025HYD01",
+    "manufactured_by": "Meyer Organics",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 50,
+    "name": "Gaso Kid Oral Drops",
+    "description": "Oral drops for children: dill oil + fennel oil + simethicone to ease abdominal pain, bloating & discomfort.",
+    "medicine_type": "Antispasmodic/Antiflatulent (paediatric drops)",
+    "uses": ["Abdominal pain (child)", "Bloating", "Gas"],
+    "images": "/assets/StomachCare/gasokid.png",
+    "cost": 95.0,
+    "discount": 8,
+    "final_price": 87.4,
+    "manufacturer": "Biosortia Healthcare",
+    "stock": 180,
+    "rating": 4.5,
+
+    "highlights": {
+      "product_type": "Paediatric Drops",
+      "pack_size": "15 ml bottle",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Shake well before use.",
+      "usage_instruction": "Administer with dropper according to age."
+    },
+
+    "brand": "Biosortia Kids",
+    "material_type_free": "Alcohol-free",
+    "ingredients": ["Dill oil", "Fennel oil", "Simethicone"],
+    "bio_friendly": "Yes",
+    "exemption_type": "Paediatric",
+    "net_quantity": "15 ml",
+    "weight": "15 ml",
+    "packaging_type": "Bottle",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "KidsCare Pharmacy",
+    "seller_address": "123 Child Wellness Street, Hyderabad",
+    "seller_license": "KIDMED2025HYD01",
+    "manufactured_by": "Biosortia Healthcare",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 51,
+    "name": "Woodward’s Gripe Water 130 ml",
+    "description": "Classic gripe water used for infants to ease colic, indigestion and stomach discomfort.",
+    "medicine_type": "Gripe Water (infant syrup)",
+    "uses": ["Infant colic", "Indigestion", "Gas"],
+    "images": "/assets/StomachCare/gripe-water.png",
+    "cost": 57.0,
+    "discount": 8,
+    "final_price": 52.44,
+    "manufacturer": "Woodward’s",
+    "stock": 300,
+    "rating": 4.4,
+
+    "highlights": {
+      "product_type": "Infant Syrup",
+      "pack_size": "130 ml bottle",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Not recommended for babies below 1 month.",
+      "usage_instruction": "Give recommended dose with measuring cap."
+    },
+
+    "brand": "Woodward's",
+    "material_type_free": "Alcohol-free",
+    "ingredients": ["Dill extract", "Sarjikakshar", "Sugar base"],
+    "bio_friendly": "Yes",
+    "exemption_type": "Ayurvedic",
+    "net_quantity": "130 ml",
+    "weight": "130 ml",
+    "packaging_type": "Bottle",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "KidsCare Pharmacy",
+    "seller_address": "123 Child Wellness Street, Hyderabad",
+    "seller_license": "KIDMED2025HYD01",
+    "manufactured_by": "Woodward’s",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 52,
+    "name": "Probiotic Sachets for Kids",
+    "description": "Probiotics specially formulated for children to help gut flora balance, especially after diarrhea or antibiotic use.",
+    "medicine_type": "Probiotic (paediatric sachet)",
+    "uses": ["Diarrhea (child)", "Post-antibiotic gut recovery"],
+    "images": "/assets/StomachCare/probiotic-kids.png",
+    "cost": 120.0,
+    "discount": 10,
+    "final_price": 108.0,
+    "manufacturer": "MacLeods (kids range)",
+    "stock": 220,
+    "rating": 4.7,
+
+    "highlights": {
+      "product_type": "Kids Probiotic Sachet",
+      "pack_size": "1 sachet",
+      "shelf_life": "18 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Use under pediatric guidance.",
+      "usage_instruction": "Mix sachet contents with water/milk."
+    },
+
+    "brand": "MacLeods Kids",
+    "material_type_free": "Preservative-free",
+    "ingredients": ["Lactobacillus", "Bifidobacterium"],
+    "bio_friendly": "Yes",
+    "exemption_type": "Probiotic",
+    "net_quantity": "1 sachet",
+    "weight": "5g",
+    "packaging_type": "Sachet",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "KidsCare Pharmacy",
+    "seller_address": "123 Child Wellness Street, Hyderabad",
+    "seller_license": "KIDMED2025HYD01",
+    "manufactured_by": "MacLeods",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 53,
+    "name": "ORS Kids Hydration Powder",
+    "description": "Mild flavored ORS powder for children to restore hydration and electrolytes.",
+    "medicine_type": "ORS (Kids)",
+    "uses": ["Dehydration (child)", "Loose motion (child)"],
+    "images": "/assets/StomachCare/ors-kids.png",
+    "cost": 18.0,
+    "discount": 0,
+    "final_price": 18.0,
+    "manufacturer": "Pedicare",
+    "stock": 480,
+    "rating": 4.9,
+
+    "highlights": {
+      "product_type": "Kids ORS Powder",
+      "pack_size": "1 sachet",
+      "shelf_life": "18 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Store in cool dry place.",
+      "usage_instruction": "Mix with 200 ml clean water."
+    },
+
+    "brand": "Pedicare",
+    "material_type_free": "Sugar-based",
+    "ingredients": ["Dextrose", "Electrolytes"],
+    "bio_friendly": "Yes",
+    "exemption_type": "ORS",
+    "net_quantity": "1 sachet",
+    "weight": "18g",
+    "packaging_type": "Sachet",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "KidsCare Pharmacy",
+    "seller_address": "123 Child Wellness Street, Hyderabad",
+    "seller_license": "KIDMED2025HYD01",
+    "manufactured_by": "Pedicare Labs",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 54,
+    "name": "Pudin Hara Pearls (Kids)",
+    "description": "Ayurvedic digestive pearls for kids to relieve gas and stomach discomfort.",
+    "medicine_type": "Ayurvedic (kids tablets)",
+    "uses": ["Gas (child)", "Indigestion (child)"],
+    "images": "/assets/StomachCare/pudin-hara-kids.png",
+    "cost": 45.0,
+    "discount": 5,
+    "final_price": 42.75,
+    "manufacturer": "Dabur",
+    "stock": 300,
+    "rating": 4.6,
+
+    "highlights": {
+      "product_type": "Ayurvedic Tablets (Kids)",
+      "pack_size": "10 capsules",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Not for children under 3 years.",
+      "usage_instruction": "Give 1 pearl after meals."
+    },
+
+    "brand": "Dabur Kids",
+    "material_type_free": "Preservative-free",
+    "ingredients": ["Mint", "Carminative herbs"],
+    "bio_friendly": "Yes",
+    "exemption_type": "Ayurvedic",
+    "net_quantity": "10 capsules",
+    "weight": "10g",
+    "packaging_type": "Blister pack",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "KidsCare Pharmacy",
+    "seller_address": "123 Child Wellness Street, Hyderabad",
+    "seller_license": "KIDMED2025HYD01",
+    "manufactured_by": "Dabur India",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 55,
+    "name": "Lactobacillus Kids Capsule",
+    "description": "Child-friendly probiotic capsule/sachet for digestion and immunity support.",
+    "medicine_type": "Probiotic (kids capsule)",
+    "uses": ["Digestive health (child)", "Gut flora support"],
+    "images": "/assets/StomachCare/lactobacillus-kids.png",
+    "cost": 95.0,
+    "discount": 8,
+    "final_price": 87.4,
+    "manufacturer": "Win-Medic (kids range)",
+    "stock": 240,
+    "rating": 4.8,
+
+    "highlights": {
+      "product_type": "Kids Probiotic Capsule",
+      "pack_size": "10 capsules",
+      "shelf_life": "18 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Use under pediatric supervision.",
+      "usage_instruction": "Take 1 capsule daily after meals."
+    },
+
+    "brand": "Win-Medic Kids",
+    "material_type_free": "Preservative-free",
+    "ingredients": ["Lactobacillus", "Bifidobacterium"],
+    "bio_friendly": "Yes",
+    "exemption_type": "Probiotic",
+    "net_quantity": "10 capsules",
+    "weight": "10g",
+    "packaging_type": "Blister pack",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "KidsCare Pharmacy",
+    "seller_address": "123 Child Wellness Street, Hyderabad",
+    "seller_license": "KIDMED2025HYD01",
+    "manufactured_by": "Win-Medic",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 56,
+    "name": "Simethicone Drops Infant",
+    "description": "Infant drops containing simethicone for safe relief from wind/colic and trapped gas in babies.",
+    "medicine_type": "Anti-foaming (infant drops)",
+    "uses": ["Wind/colic (infant)", "Gas relief"],
+    "images": "/assets/StomachCare/simethiconeinfant.png",
+    "cost": 60.0,
+    "discount": 0,
+    "final_price": 60.0,
+    "manufacturer": "Glenmark (infant)",
+    "stock": 320,
+    "rating": 4.5,
+
+    "highlights": {
+      "product_type": "Infant Drops",
+      "pack_size": "15 ml",
+      "shelf_life": "18 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Use only the dropper provided.",
+      "usage_instruction": "Give 0.5–1 ml up to 4 times daily."
+    },
+
+    "brand": "Glenmark Infant",
+    "material_type_free": "Alcohol-free",
+    "ingredients": ["Simethicone"],
+    "bio_friendly": "Yes",
+    "exemption_type": "Infant care",
+    "net_quantity": "15 ml",
+    "weight": "15 ml",
+    "packaging_type": "Bottle",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "KidsCare Pharmacy",
+    "seller_address": "123 Child Wellness Street, Hyderabad",
+    "seller_license": "KIDMED2025HYD01",
+    "manufactured_by": "Glenmark",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 57,
+    "name": "Itopride Junior Syrup",
+    "description": "Gastro-prokinetic syrup for children with functional dyspepsia, fullness after meals and nausea.",
+    "medicine_type": "Prokinetic (kids syrup)",
+    "uses": ["Functional dyspepsia (child)", "Nausea (child)"],
+    "images":"/assets/StomachCare/itopride-junior.png",
+    "cost": 110.0,
+    "discount": 10,
+    "final_price": 99.0,
+    "manufacturer": "Sun Pharma (paediatric)",
+    "stock": 150,
+    "rating": 4.4,
+
+    "highlights": {
+      "product_type": "Kids Syrup",
+      "pack_size": "60 ml bottle",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Not for children below 5 years.",
+      "usage_instruction": "Give 5–10 ml before meals, as prescribed."
+    },
+
+    "brand": "Sun Pharma Kids",
+    "material_type_free": "Preservative-free",
+    "ingredients": ["Itopride Hydrochloride"],
+    "bio_friendly": "Yes",
+    "exemption_type": "Prescription recommended",
+    "net_quantity": "60 ml",
+    "weight": "60 ml",
+    "packaging_type": "Bottle",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "KidsCare Pharmacy",
+    "seller_address": "123 Child Wellness Street, Hyderabad",
+    "seller_license": "KIDMED2025HYD01",
+    "manufactured_by": "Sun Pharma",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 58,
+    "name": "Hypothetical Kids Antacid Chewable",
+    "description": "Child-sized antacid chewable tablet for occasional heartburn and sour stomach in older children.",
+    "medicine_type": "Antacid Chewable (kids tablet)",
+    "uses": ["Heartburn (child)", "Sour stomach (child)"],
+    "images": "/assets/StomachCare/antacid-chew-kids.png",
+    "cost": 50.0,
+    "discount": 5,
+    "final_price": 47.5,
+    "manufacturer": "Generic Kids Brand",
+    "stock": 260,
+    "rating": 4.3,
+
+    "highlights": {
+      "product_type": "Kids Chewable Tablet",
+      "pack_size": "10 tablets",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Not for children below 6 years.",
+      "usage_instruction": "Chew 1 tablet when needed."
+    },
+
+    "brand": "Generic Kids",
+    "material_type_free": "Sugar-free",
+    "ingredients": ["Calcium carbonate", "Flavouring agents"],
+    "bio_friendly": "Yes",
+    "exemption_type": "OTC",
+    "net_quantity": "10 tablets",
+    "weight": "12g",
+    "packaging_type": "Blister pack",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "KidsCare Pharmacy",
+    "seller_address": "123 Child Wellness Street, Hyderabad",
+    "seller_license": "KIDMED2025HYD01",
+    "manufactured_by": "Generic Kids Brand",
+    "country_of_origin": "India"
+  }
+],
+"elder": [
+  {
+    "id": 59,
+    "name": "Digene Senior Gel",
+    "description": "Gentle antacid gel formulated for elders to relieve acidity, bloating, and heartburn.",
+    "medicine_type": "Antacid Gel (elder safe)",
+    "uses": ["Acidity", "Gas", "Heartburn"],
+    "images": "/assets/StomachCare/digene-senior.png",
+    "cost": 145.0,
+    "discount": 5,
+    "final_price": 137.75,
+    "manufacturer": "Abbott",
+    "stock": 140,
+    "rating": 4.7,
+
+    "highlights": {
+      "product_type": "Antacid Gel",
+      "pack_size": "200 ml bottle",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Safe for seniors; consult doctor if kidney issues exist.",
+      "usage_instruction": "Take 2 teaspoons after meals or as directed."
+    },
+
+    "brand": "Abbott Senior",
+    "material_type_free": "Sugar-free",
+    "ingredients": ["Magnesium hydroxide", "Aluminium hydroxide", "Simethicone"],
+    "bio_friendly": "Yes",
+    "exemption_type": "OTC",
+    "net_quantity": "200 ml",
+    "weight": "200 ml",
+    "packaging_type": "Bottle",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Abbott India",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 60,
+    "name": "Isabgol Fiber Husk (Elder Care)",
+    "description": "Natural fiber supplement for constipation relief, specially recommended for senior citizens.",
+    "medicine_type": "Fiber Supplement",
+    "uses": ["Constipation", "Digestive health"],
+    "images": "/assets/StomachCare/isabgol-elder.png",
+    "cost": 160.0,
+    "discount": 5,
+    "final_price": 152.0,
+    "manufacturer": "Satyam",
+    "stock": 200,
+    "rating": 4.8,
+
+    "highlights": {
+      "product_type": "Fiber Husk",
+      "pack_size": "100g pack",
+      "shelf_life": "12 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Drink plenty of water after consumption.",
+      "usage_instruction": "Mix 1 spoon in warm water before bedtime."
+    },
+
+    "brand": "Satyam Elder",
+    "material_type_free": "Gluten-free",
+    "ingredients": ["Psyllium husk"],
+    "bio_friendly": "Yes",
+    "exemption_type": "Ayurvedic",
+    "net_quantity": "100g",
+    "weight": "100g",
+    "packaging_type": "Pouch",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Satyam Naturals",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 61,
+    "name": "Senior Enzyme Syrup",
+    "description": "Mild digestive enzyme syrup for elders experiencing indigestion or slow digestion.",
+    "medicine_type": "Digestive Enzyme",
+    "uses": ["Indigestion", "Gas", "Bloating"],
+    "images": "/assets/StomachCare/senior-enzyme.png",
+    "cost": 135.0,
+    "discount": 10,
+    "final_price": 121.5,
+    "manufacturer": "Mankind Pharma",
+    "stock": 120,
+    "rating": 4.6,
+
+    "highlights": {
+      "product_type": "Enzyme Syrup",
+      "pack_size": "150 ml bottle",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Not recommended for diabetic elders without physician advice.",
+      "usage_instruction": "Take one teaspoon after meals."
+    },
+
+    "brand": "Mankind Senior",
+    "material_type_free": "Artificial flavor-free",
+    "ingredients": ["Fungal diastase", "Papain"],
+    "bio_friendly": "Yes",
+    "exemption_type": "Digestive Care",
+    "net_quantity": "150 ml",
+    "weight": "150 ml",
+    "packaging_type": "Bottle",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Mankind Pharma",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 62,
+    "name": "Sucralfate Suspension (Senior Safe)",
+    "description": "Protective stomach-coating liquid for ulcers and gastritis, gentle on elderly stomach.",
+    "medicine_type": "Anti-ulcer suspension",
+    "uses": ["Ulcers", "Gastritis", "Burning sensation"],
+    "images": "/assets/StomachCare/sucralfate-elder.png",
+    "cost": 170.0,
+    "discount": 10,
+    "final_price": 153.0,
+    "manufacturer": "Sun Pharma",
+    "stock": 100,
+    "rating": 4.7,
+
+    "highlights": {
+      "product_type": "Oral Suspension",
+      "pack_size": "200 ml bottle",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Take 30 minutes before meals.",
+      "usage_instruction": "Shake well and take 1 tablespoon before meals."
+    },
+
+    "brand": "Sun Senior",
+    "material_type_free": "Sugar-free",
+    "ingredients": ["Sucralfate"],
+    "bio_friendly": "Yes",
+    "exemption_type": "Anti-ulcer care",
+    "net_quantity": "200 ml",
+    "weight": "200 ml",
+    "packaging_type": "Bottle",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Sun Pharma",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 63,
+    "name": "Rabeprazole 20mg (Elder Care)",
+    "description": "Low-irritation PPI for elders with GERD, acidity or acid reflux.",
+    "medicine_type": "PPI (Tablet)",
+    "uses": ["GERD", "Acid reflux", "Ulcers"],
+    "images": "/assets/StomachCare/rabe-senior.png",
+    "cost": 95.0,
+    "discount": 10,
+    "final_price": 85.5,
+    "manufacturer": "Cipla",
+    "stock": 200,
+    "rating": 4.6,
+
+    "highlights": {
+      "product_type": "Tablet",
+      "pack_size": "1 strip (10 tablets)",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Consult doctor if taking blood thinners.",
+      "usage_instruction": "Take 1 tablet before breakfast."
+    },
+
+    "brand": "Cipla Senior",
+    "material_type_free": "Preservative-free",
+    "ingredients": ["Rabeprazole"],
+    "bio_friendly": "Yes",
+    "exemption_type": "Prescription advised",
+    "net_quantity": "10 tablets",
+    "weight": "10 tablets",
+    "packaging_type": "Strip",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Medicare Pharmacy",
+    "seller_address": "123 Medical Street, Hyderabad",
+    "seller_license": "MED2025HYD001",
+    "manufactured_by": "Cipla",
+    "country_of_origin": "India"
+  },
+      {
+      "id": 64,
+      "name": "Pantoprazole 20mg (Senior Safe)",
+      "description": "Gentle PPI tablet for acidity and chronic GERD, formulated for senior stomach sensitivity.",
+      "medicine_type": "PPI (Tablet)",
+      "uses": ["GERD", "Acid reflux", "Heartburn"],
+      "images": "/assets/StomachCare/pantop-senior.png",
+      "cost": 75.0,
+      "discount": 5,
+      "final_price": 71.25,
+      "manufacturer": "Aristo",
+      "stock": 240,
+      "rating": 4.6,
+
+      "highlights": {
+        "product_type": "Tablet",
+        "pack_size": "1 strip (10 tablets)",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Take before meals. Safe for long-term GERD under doctor supervision.",
+        "usage_instruction": "Take 1 tablet daily before breakfast."
+      },
+
+      "brand": "Aristo Senior",
+      "material_type_free": "Sugar-free",
+      "ingredients": ["Pantoprazole"],
+      "bio_friendly": "Yes",
+      "exemption_type": "Prescription recommended",
+      "net_quantity": "10 tablets",
+      "weight": "10 tablets",
+      "packaging_type": "Strip",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "Medicare Pharmacy",
+      "seller_address": "123 Medical Street, Hyderabad",
+      "seller_license": "MED2025HYD001",
+      "manufactured_by": "Aristo Pharma",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 65,
+      "name": "Elder Digestive Tonic",
+      "description": "Ayurvedic digestive tonic for seniors to improve gut motility and reduce bloating.",
+      "medicine_type": "Ayurvedic Digestive Tonic",
+      "uses": ["Gas", "Bloating", "Slow digestion"],
+      "images": "/assets/StomachCare/StomachCaretonic.png",
+      "cost": 140.0,
+      "discount": 10,
+      "final_price": 126.0,
+      "manufacturer": "Himalaya",
+      "stock": 180,
+      "rating": 4.7,
+
+      "highlights": {
+        "product_type": "Ayurvedic Liquid",
+        "pack_size": "200 ml bottle",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Shake well before use.",
+        "usage_instruction": "Consume 1 tablespoon after meals."
+      },
+
+      "brand": "Himalaya Senior",
+      "material_type_free": "Preservative-free",
+      "ingredients": ["Jeera", "Saunf", "Ajwain"],
+      "bio_friendly": "Yes",
+      "exemption_type": "Ayurvedic",
+      "net_quantity": "200 ml",
+      "weight": "200 ml",
+      "packaging_type": "Bottle",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "Medicare Pharmacy",
+      "seller_address": "123 Medical Street, Hyderabad",
+      "seller_license": "MED2025HYD001",
+      "manufactured_by": "Himalaya Wellness",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 66,
+      "name": "Lactulose Senior Syrup",
+      "description": "Mild laxative syrup suitable for elders with chronic constipation.",
+      "medicine_type": "Laxative (Syrup)",
+      "uses": ["Constipation", "Hard stools"],
+      "images": "/assets/StomachCare/lactulose-senior.png",
+      "cost": 185.0,
+      "discount": 5,
+      "final_price": 175.75,
+      "manufacturer": "Intas",
+      "stock": 160,
+      "rating": 4.6,
+
+      "highlights": {
+        "product_type": "Syrup",
+        "pack_size": "200 ml bottle",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Safe for seniors; hydrate well after use.",
+        "usage_instruction": "Take 15 ml at bedtime or as advised."
+      },
+
+      "brand": "Intas Senior",
+      "material_type_free": "Sugar-free",
+      "ingredients": ["Lactulose"],
+      "bio_friendly": "Yes",
+      "exemption_type": "OTC",
+      "net_quantity": "200 ml",
+      "weight": "200 ml",
+      "packaging_type": "Bottle",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "Medicare Pharmacy",
+      "seller_address": "123 Medical Street, Hyderabad",
+      "seller_license": "MED2025HYD001",
+      "manufactured_by": "Intas Pharma",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 67,
+      "name": "Probiotic Senior Capsule",
+      "description": "Daily probiotic capsule to maintain gut balance and digestion in elders.",
+      "medicine_type": "Probiotic",
+      "uses": ["Gut balance", "Weak digestion", "Antibiotic recovery"],
+      "images": "/assets/StomachCare/probiotic-senior.png",
+      "cost": 95.0,
+      "discount": 5,
+      "final_price": 90.25,
+      "manufacturer": "Sun Pharma",
+      "stock": 260,
+      "rating": 4.8,
+
+      "highlights": {
+        "product_type": "Capsule",
+        "pack_size": "1 strip (10 capsules)",
+        "shelf_life": "18 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Consult if immunocompromised.",
+        "usage_instruction": "Take 1 capsule daily after meals."
+      },
+
+      "brand": "Sun Senior",
+      "material_type_free": "Preservative-free",
+      "ingredients": ["Lactobacillus", "Bifidobacterium"],
+      "bio_friendly": "Yes",
+      "exemption_type": "Probiotic",
+      "net_quantity": "10 capsules",
+      "weight": "10 capsules",
+      "packaging_type": "Strip",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "Medicare Pharmacy",
+      "seller_address": "123 Medical Street, Hyderabad",
+      "seller_license": "MED2025HYD001",
+      "manufactured_by": "Sun Pharma",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 68,
+      "name": "Antacid Elder Chewable Tablet",
+      "description": "Sugar-free antacid chewable designed for elders with acidity and sour stomach.",
+      "medicine_type": "Antacid (chewable)",
+      "uses": ["Acidity", "Sour stomach"],
+      "images": "/assets/StomachCare/antacid.png",
+      "cost": 55.0,
+      "discount": 5,
+      "final_price": 52.25,
+      "manufacturer": "Pfizer",
+      "stock": 300,
+      "rating": 4.5,
+
+      "highlights": {
+        "product_type": "Chewable Tablet",
+        "pack_size": "15 tablets",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Do not exceed 3 tablets per day.",
+        "usage_instruction": "Chew 1 tablet after meals."
+      },
+
+      "brand": "Pfizer Senior",
+      "material_type_free": "Sugar-free",
+      "ingredients": ["Calcium carbonate"],
+      "bio_friendly": "Yes",
+      "exemption_type": "OTC",
+      "net_quantity": "15 tablets",
+      "weight": "20g",
+      "packaging_type": "Blister pack",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "Medicare Pharmacy",
+      "seller_address": "123 Medical Street, Hyderabad",
+      "seller_license": "MED2025HYD001",
+      "manufactured_by": "Pfizer",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 69,
+      "name": "Ajwain Elder Tablets",
+      "description": "Natural ajwain-based digestive tablets for gas, indigestion, and bloating in elders.",
+      "medicine_type": "Ayurvedic Tablet",
+      "uses": ["Gas", "Indigestion"],
+      "images": "/assets/StomachCare/ajwain-elder.png",
+      "cost": 85.0,
+      "discount": 5,
+      "final_price": 80.75,
+      "manufacturer": "Patanjali",
+      "stock": 220,
+      "rating": 4.6,
+
+      "highlights": {
+        "product_type": "Ayurvedic Tablet",
+        "pack_size": "20 tablets",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Herbal product; consult if allergic.",
+        "usage_instruction": "Take 1–2 tablets after meals."
+      },
+
+      "brand": "Patanjali Elder",
+      "material_type_free": "Preservative-free",
+      "ingredients": ["Ajwain", "Herbal carminatives"],
+      "bio_friendly": "Yes",
+      "exemption_type": "Ayurvedic",
+      "net_quantity": "20 tablets",
+      "weight": "25g",
+      "packaging_type": "Blister pack",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "Medicare Pharmacy",
+      "seller_address": "123 Medical Street, Hyderabad",
+      "seller_license": "MED2025HYD001",
+      "manufactured_by": "Patanjali",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 70,
+      "name": "Elder Gas Relief Drops",
+      "description": "Gentle anti-gas liquid for elders suffering from bloating or trapped gas.",
+      "medicine_type": "Anti-foaming Drops",
+      "uses": ["Gas", "Bloating"],
+      "images": "/assets/StomachCare/gas-drops-elder.png",
+      "cost": 65.0,
+      "discount": 5,
+      "final_price": 61.75,
+      "manufacturer": "Glenmark",
+      "stock": 180,
+      "rating": 4.5,
+
+      "highlights": {
+        "product_type": "Liquid Drops",
+        "pack_size": "30 ml bottle",
+        "shelf_life": "18 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Shake before use.",
+        "usage_instruction": "Take 1 ml after meals."
+      },
+
+      "brand": "Glenmark Senior",
+      "material_type_free": "Alcohol-free",
+      "ingredients": ["Simethicone"],
+      "bio_friendly": "Yes",
+      "exemption_type": "OTC",
+      "net_quantity": "30 ml",
+      "weight": "30 ml",
+      "packaging_type": "Bottle",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "Medicare Pharmacy",
+      "seller_address": "123 Medical Street, Hyderabad",
+      "seller_license": "MED2025HYD001",
+      "manufactured_by": "Glenmark",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 71,
+      "name": "Elder Ayurvedic Digestive Churna",
+      "description": "Mild herbal churna designed for elders to relieve indigestion and acidity.",
+      "medicine_type": "Ayurvedic Powder",
+      "uses": ["Indigestion", "Acidity", "Gas"],
+      "images": "/assets/StomachCare/churna11.png",
+      "cost": 95.0,
+      "discount": 5,
+      "final_price": 90.25,
+      "manufacturer": "Baidyanath",
+      "stock": 210,
+      "rating": 4.6,
+
+      "highlights": {
+        "product_type": "Digestive Powder",
+        "pack_size": "100g jar",
+        "shelf_life": "18 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Keep away from moisture.",
+        "usage_instruction": "Take 1 spoon with warm water."
+      },
+
+      "brand": "Baidyanath Elder",
+      "material_type_free": "Chemical-free",
+      "ingredients": ["Hing", "Jeera", "Ajwain"],
+      "bio_friendly": "Yes",
+      "exemption_type": "Ayurvedic",
+      "net_quantity": "100g",
+      "weight": "100g",
+      "packaging_type": "Jar",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "Medicare Pharmacy",
+      "seller_address": "123 Medical Street, Hyderabad",
+      "seller_license": "MED2025HYD001",
+      "manufactured_by": "Baidyanath",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 72,
+      "name": "Simethicone Senior Chewable",
+      "description": "Gentle chewable tablet for elders suffering from gas, heaviness, or discomfort.",
+      "medicine_type": "Anti-gas Chewable",
+      "uses": ["Gas", "Bloating"],
+      "images": "/assets/StomachCare/simethicone-senior.png",
+      "cost": 58.0,
+      "discount": 5,
+      "final_price": 55.1,
+      "manufacturer": "Cipla",
+      "stock": 270,
+      "rating": 4.5,
+
+      "highlights": {
+        "product_type": "Chewable Tablet",
+        "pack_size": "10 tablets",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Do not exceed 4 tablets/day.",
+        "usage_instruction": "Chew 1 tablet after meals."
+      },
+
+      "brand": "Cipla Senior",
+      "material_type_free": "Preservative-free",
+      "ingredients": ["Simethicone"],
+      "bio_friendly": "Yes",
+      "exemption_type": "OTC",
+      "net_quantity": "10 tablets",
+      "weight": "12g",
+      "packaging_type": "Blister pack",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "Medicare Pharmacy",
+      "seller_address": "123 Medical Street, Hyderabad",
+      "seller_license": "MED2025HYD001",
+      "manufactured_by": "Cipla",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 73,
+      "name": "Elder ORS Hydration Mix",
+      "description": "ORS formulation designed for elders prone to dehydration due to digestion issues or heat.",
+      "medicine_type": "ORS (Elder Focused)",
+      "uses": ["Dehydration", "Loose motion", "Weakness"],
+      "images": "/assets/StomachCare/ors3.png",
+      "cost": 25.0,
+      "discount": 0,
+      "final_price": 25.0,
+      "manufacturer": "Cipla",
+      "stock": 380,
+      "rating": 4.8,
+
+      "highlights": {
+        "product_type": "ORS Sachet",
+        "pack_size": "1 sachet",
+        "shelf_life": "18 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Mix with 200 ml clean water only.",
+        "usage_instruction": "Sip slowly throughout the day."
+      },
+
+      "brand": "Cipla Senior",
+      "material_type_free": "Sugar-based",
+      "ingredients": ["Electrolytes", "Dextrose"],
+      "bio_friendly": "Yes",
+      "exemption_type": "ORS",
+      "net_quantity": "1 sachet",
+      "weight": "20g",
+      "packaging_type": "Sachet",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "Medicare Pharmacy",
+      "seller_address": "123 Medical Street, Hyderabad",
+      "seller_license": "MED2025HYD001",
+      "manufactured_by": "Cipla",
+      "country_of_origin": "India"
+    }
+],
+
+  "top_rated": [
+    {
+      "id": 79,
+      "name": "Elder Digestive Enzyme Syrup",
+      "description": "A mild digestive enzyme syrup formulated for seniors to support digestion, reduce bloating and improve nutrient absorption.",
+      "medicine_type": "Digestive Enzyme (syrup)",
+      "uses": ["Indigestion", "Gas", "Bloating"],
+      "images": ["/assets/StomachCare/enzyme-syrup.png"],
+      "cost": 160.0,
+      "discount": 10,
+      "final_price": 144.0,
+      "manufacturer": "Himalaya",
+      "stock": 180,
+      "rating": 4.9,
+
+      "highlights": {
+        "product_type": "Senior Digestive Syrup",
+        "pack_size": "200 ml",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Consult physician if symptoms persist.",
+        "usage_instruction": "Take 10 ml after meals or as advised."
+      },
+
+      "brand": "Himalaya Senior",
+      "material_type_free": "Alcohol-free",
+      "ingredients": ["Papain", "Fungal Diastase", "Cinnamon"],
+      "bio_friendly": "Yes",
+      "exemption_type": "Ayurvedic Digestive",
+      "net_quantity": "200 ml",
+      "weight": "200 ml",
+      "packaging_type": "Bottle",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "ElderCare Pharmacy",
+      "seller_address": "11 Ayurveda Street, Hyderabad",
+      "seller_license": "ELDMED2025HYD01",
+      "manufactured_by": "Himalaya",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 80,
+      "name": "Senior Triphala Plus",
+      "description": "A gentle triphala-based formulation that supports bowel movement, reduces acidity and enhances digestion in older adults.",
+      "medicine_type": "Ayurvedic Digestive",
+      "uses": ["Constipation", "Acidity", "Gut cleansing"],
+      "images": "/assets/StomachCare/triphala-plus.png",
+      "cost": 130.0,
+      "discount": 5,
+      "final_price": 123.5,
+      "manufacturer": "Patanjali",
+      "stock": 200,
+      "rating": 4.8,
+
+      "highlights": {
+        "product_type": "Senior Digestive Tonic",
+        "pack_size": "150 ml",
+        "shelf_life": "18 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Safe for daily use. Consult doctor if diabetic.",
+        "usage_instruction": "Take 10 ml at bedtime with warm water."
+      },
+
+      "brand": "Patanjali Senior",
+      "material_type_free": "Preservative-free",
+      "ingredients": ["Amla", "Haritaki", "Bibhitaki"],
+      "bio_friendly": "Yes",
+      "exemption_type": "Ayurvedic",
+      "net_quantity": "150 ml",
+      "weight": "150 ml",
+      "packaging_type": "Bottle",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "ElderCare Pharmacy",
+      "seller_address": "11 Ayurveda Street, Hyderabad",
+      "seller_license": "ELDMED2025HYD01",
+      "manufactured_by": "Patanjali",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 81,
+      "name": "Gas Relief Herbal Tonic (Senior)",
+      "description": "A soothing herbal tonic that reduces gas, acidity and stomach discomfort in seniors.",
+      "medicine_type": "Ayurvedic Gas Tonic",
+      "uses": ["Gas", "Acidity", "Heaviness"],
+      "images": "/assets/StomachCare/gas-relief.png",
+      "cost": 140.0,
+      "discount": 8,
+      "final_price": 128.8,
+      "manufacturer": "Dabur",
+      "stock": 170,
+      "rating": 4.7,
+
+      "highlights": {
+        "product_type": "Herbal Digestive Tonic",
+        "pack_size": "200 ml",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Shake well before use.",
+        "usage_instruction": "Consume 2 teaspoons after meals."
+      },
+
+      "brand": "Dabur Senior",
+      "material_type_free": "Chemical-free",
+      "ingredients": ["Ajwain", "Saunf", "Ginger"],
+      "bio_friendly": "Yes",
+      "exemption_type": "Ayurvedic OTC",
+      "net_quantity": "200 ml",
+      "weight": "200 ml",
+      "packaging_type": "Bottle",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "ElderCare Pharmacy",
+      "seller_address": "11 Ayurveda Street, Hyderabad",
+      "seller_license": "ELDMED2025HYD01",
+      "manufactured_by": "Dabur India",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 82,
+      "name": "Isabgol Fiber Senior",
+      "description": "Natural psyllium husk for seniors to maintain bowel regularity and promote digestion.",
+      "medicine_type": "Fiber Supplement",
+      "uses": ["Constipation", "Digestive health"],
+      "images": "/assets/StomachCare/isabgol-senior.png",
+      "cost": 160.0,
+      "discount": 10,
+      "final_price": 144.0,
+      "manufacturer": "Satyam",
+      "stock": 340,
+      "rating": 4.9,
+
+      "highlights": {
+        "product_type": "Fiber Powder",
+        "pack_size": "200g jar",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Drink plenty of water.",
+        "usage_instruction": "Mix 1 spoon in warm water and drink at night."
+      },
+
+      "brand": "Satyam Senior",
+      "material_type_free": "Gluten-free",
+      "ingredients": ["Psyllium Husk"],
+      "bio_friendly": "Yes",
+      "exemption_type": "Fiber Supplement",
+      "net_quantity": "200g",
+      "weight": "200g",
+      "packaging_type": "Jar",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "ElderCare Pharmacy",
+      "seller_address": "11 Ayurveda Street, Hyderabad",
+      "seller_license": "ELDMED2025HYD01",
+      "manufactured_by": "Satyam",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 83,
+      "name": "LivPro Senior Liver Tonic",
+      "description": "Ayurvedic tonic designed to support digestion, metabolism and liver function in seniors.",
+      "medicine_type": "Ayurvedic Liver Tonic",
+      "uses": ["Fatty liver support", "Weak digestion"],
+      "images": "/assets/StomachCare/liver-tonic.png",
+      "cost": 175.0,
+      "discount": 10,
+      "final_price": 157.5,
+      "manufacturer": "Himalaya",
+      "stock": 150,
+      "rating": 4.8,
+
+      "highlights": {
+        "product_type": "Herbal Liver Tonic",
+        "pack_size": "200 ml",
+        "shelf_life": "36 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Avoid in severe liver issues.",
+        "usage_instruction": "Take 10 ml after meals twice daily."
+      },
+
+      "brand": "Himalaya Senior",
+      "material_type_free": "Preservative-free",
+      "ingredients": ["Kasani", "Arjuna", "Punarnava"],
+      "bio_friendly": "Yes",
+      "exemption_type": "Ayurvedic",
+      "net_quantity": "200 ml",
+      "weight": "200 ml",
+      "packaging_type": "Bottle",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "ElderCare Pharmacy",
+      "seller_address": "11 Ayurveda Street, Hyderabad",
+      "seller_license": "ELDMED2025HYD01",
+      "manufactured_by": "Himalaya",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 84,
+      "name": "Senior Ajwain Ark",
+      "description": "A soothing ajwain-based tonic for acidity, gas and heaviness designed specifically for older adults.",
+      "medicine_type": "Ayurvedic Ark",
+      "uses": ["Acidity", "Gas", "Indigestion"],
+      "images": "/assets/StomachCare/ajwain-ark1.png",
+      "cost": 95.0,
+      "discount": 5,
+      "final_price": 90.25,
+      "manufacturer": "Baidyanath",
+      "stock": 210,
+      "rating": 4.7,
+
+      "highlights": {
+        "product_type": "Digestive Ark",
+        "pack_size": "100 ml",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Keep away from direct sunlight.",
+        "usage_instruction": "Mix 5 ml in warm water and drink after meals."
+      },
+
+      "brand": "Baidyanath Senior",
+      "material_type_free": "Preservative-free",
+      "ingredients": ["Ajwain Extract"],
+      "bio_friendly": "Yes",
+      "exemption_type": "Ayurvedic",
+      "net_quantity": "100 ml",
+      "weight": "100 ml",
+      "packaging_type": "Bottle",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "ElderCare Pharmacy",
+      "seller_address": "11 Ayurveda Street, Hyderabad",
+      "seller_license": "ELDMED2025HYD01",
+      "manufactured_by": "Baidyanath",
+      "country_of_origin": "India"
+    },
+    {
+      "id": 85,
+      "name": "Herbal Acidity Relief Tonic (Senior)",
+      "description": "A soothing ayurvedic formulation for seniors to relieve acidity, heartburn and acid reflux naturally.",
+      "medicine_type": "Ayurvedic Antacid Tonic",
+      "uses": ["Acidity", "Heartburn", "Reflux"],
+      "images": "/assets/StomachCare/herbal-acidity.png",
+      "cost": 150.0,
+      "discount": 10,
+      "final_price": 135.0,
+      "manufacturer": "Zandu",
+      "stock": 190,
+      "rating": 4.8,
+
+      "highlights": {
+        "product_type": "Herbal Antacid Tonic",
+        "pack_size": "200 ml",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Avoid spicy foods for best results.",
+        "usage_instruction": "Take 10 ml twice a day after meals."
+      },
+
+      "brand": "Zandu Senior",
+      "material_type_free": "Preservative-free",
+      "ingredients": ["Yashtimadhu", "Amla", "Jeera"],
+      "bio_friendly": "Yes",
+      "exemption_type": "Ayurvedic OTC",
+      "net_quantity": "200 ml",
+      "weight": "200 ml",
+      "packaging_type": "Bottle",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "ElderCare Pharmacy",
+      "seller_address": "11 Ayurveda Street, Hyderabad",
+      "seller_license": "ELDMED2025HYD01",
+      "manufactured_by": "Zandu",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 86,
+      "name": "Senior Digestive Churna",
+      "description": "A light and effective ayurvedic churna blend to improve digestion and relieve gas in elderly individuals.",
+      "medicine_type": "Ayurvedic Churna",
+      "uses": ["Gas", "Indigestion", "Bloating"],
+      "images": "/assets/StomachCare/digestive-churna.png",
+      "cost": 85.0,
+      "discount": 5,
+      "final_price": 80.75,
+      "manufacturer": "Baidyanath",
+      "stock": 220,
+      "rating": 4.7,
+
+      "highlights": {
+        "product_type": "Digestive Powder",
+        "pack_size": "100g jar",
+        "shelf_life": "18 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Not suitable for children.",
+        "usage_instruction": "Take half teaspoon with warm water after meals."
+      },
+
+      "brand": "Baidyanath Senior",
+      "material_type_free": "Preservative-free",
+      "ingredients": ["Hing", "Jeera", "Saunf", "Black salt"],
+      "bio_friendly": "Yes",
+      "exemption_type": "Ayurvedic",
+      "net_quantity": "100g",
+      "weight": "100g",
+      "packaging_type": "Jar",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "ElderCare Pharmacy",
+      "seller_address": "11 Ayurveda Street, Hyderabad",
+      "seller_license": "ELDMED2025HYD01",
+      "manufactured_by": "Baidyanath",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 87,
+      "name": "Senior Probiotic Capsule",
+      "description": "Probiotic specially designed for senior gut health, improving digestion, immunity and nutrient absorption.",
+      "medicine_type": "Probiotic (capsule)",
+      "uses": ["Gut health", "Indigestion", "Bloating"],
+      "images": "/assets/StomachCare/probiotic-senior.png",
+      "cost": 180.0,
+      "discount": 10,
+      "final_price": 162.0,
+      "manufacturer": "Cipla",
+      "stock": 160,
+      "rating": 4.9,
+
+      "highlights": {
+        "product_type": "Senior Probiotic Capsule",
+        "pack_size": "10 capsules",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Consult doctor if immune-compromised.",
+        "usage_instruction": "Take 1 capsule daily after lunch."
+      },
+
+      "brand": "Cipla Senior",
+      "material_type_free": "Preservative-free",
+      "ingredients": ["Lactobacillus", "Bifidobacterium"],
+      "bio_friendly": "Yes",
+      "exemption_type": "Probiotic",
+      "net_quantity": "10 capsules",
+      "weight": "10g",
+      "packaging_type": "Blister pack",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "ElderCare Pharmacy",
+      "seller_address": "11 Ayurveda Street, Hyderabad",
+      "seller_license": "ELDMED2025HYD01",
+      "manufactured_by": "Cipla",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 88,
+      "name": "Herbal Constipation Relief Tonic (Elder)",
+      "description": "A safe, non-habit forming ayurvedic tonic to relieve constipation and support smooth bowel movement in seniors.",
+      "medicine_type": "Ayurvedic Laxative Tonic",
+      "uses": ["Constipation", "Dry stool"],
+      "images": ["/assets/StomachCare/constipation.png"],
+      "cost": 165.0,
+      "discount": 8,
+      "final_price": 151.8,
+      "manufacturer": "Dabur",
+      "stock": 150,
+      "rating": 4.8,
+
+      "highlights": {
+        "product_type": "Herbal Laxative Tonic",
+        "pack_size": "200 ml",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Do not overdose. Mild loose motion may occur.",
+        "usage_instruction": "Take 10–15 ml at night with warm water."
+      },
+
+      "brand": "Dabur Senior",
+      "material_type_free": "Alcohol-free",
+      "ingredients": ["Senna", "Triphala", "Isabgol"],
+      "bio_friendly": "Yes",
+      "exemption_type": "Ayurvedic OTC",
+      "net_quantity": "200 ml",
+      "weight": "200 ml",
+      "packaging_type": "Bottle",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "ElderCare Pharmacy",
+      "seller_address": "11 Ayurveda Street, Hyderabad",
+      "seller_license": "ELDMED2025HYD01",
+      "manufactured_by": "Dabur India",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 89,
+      "name": "Senior Amla Digestive Tonic",
+      "description": "Amla-rich tonic for seniors to improve digestion, support immunity and reduce acidity.",
+      "medicine_type": "Ayurvedic Tonic",
+      "uses": ["Acidity", "Weak digestion", "Nutrient absorption"],
+      "images": "/assets/StomachCare/amla.png",
+      "cost": 140.0,
+      "discount": 5,
+      "final_price": 133.0,
+      "manufacturer": "Himalaya",
+      "stock": 210,
+      "rating": 4.7,
+
+      "highlights": {
+        "product_type": "Ayurvedic Digestive Tonic",
+        "pack_size": "200 ml",
+        "shelf_life": "36 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "May mildly increase bowel movement.",
+        "usage_instruction": "Consume 10 ml on empty stomach."
+      },
+
+      "brand": "Himalaya Senior",
+      "material_type_free": "Preservative-free",
+      "ingredients": ["Amla", "Ginger", "Jeera"],
+      "bio_friendly": "Yes",
+      "exemption_type": "Ayurvedic",
+      "net_quantity": "200 ml",
+      "weight": "200 ml",
+      "packaging_type": "Bottle",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "ElderCare Pharmacy",
+      "seller_address": "11 Ayurveda Street, Hyderabad",
+      "seller_license": "ELDMED2025HYD01",
+      "manufactured_by": "Himalaya",
+      "country_of_origin": "India"
+    }
+  ],
+
+"recommendations": [
+  {
+    "id": 90,
+    "name": "Zandu Pancharishta Digestive Tonic",
+    "description": "Ayurvedic digestive tonic that improves appetite, supports digestion, and reduces gas and acidity in elders.",
+    "medicine_type": "Ayurvedic Digestive Tonic",
+    "uses": ["Indigestion", "Gas", "Loss of appetite", "Acidity"],
+    "images": "/assets/StomachCare/pancharishta.png",
+    "cost": 145.0,
+    "discount": 10,
+    "final_price": 130.5,
+    "manufacturer": "Zandu Care",
+    "stock": 250,
+    "rating": 4.8,
+
+    "highlights": {
+      "product_type": "Digestive Tonic",
+      "pack_size": "450 ml bottle",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Consult a doctor if symptoms persist for long.",
+      "usage_instruction": "Take 2 tbsp twice daily after meals."
+    },
+
+    "brand": "Zandu",
+    "material_type_free": "Alcohol-based formulation",
+    "ingredients": ["Dashmool", "Draksha", "Amla", "Haritaki"],
+    "bio_friendly": "Yes",
+    "exemption_type": "Ayurvedic",
+    "net_quantity": "450 ml",
+    "weight": "450 ml",
+    "packaging_type": "Bottle",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "ElderCare Pharmacy",
+    "seller_address": "56 Wellness Road, Hyderabad",
+    "seller_license": "ELDMED2025HYD11",
+    "manufactured_by": "Zandu Care",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 91,
+    "name": "Baidyanath Abhayarishta",
+    "description": "Ayurvedic tonic for constipation, acidity, and digestion problems frequently seen in elders.",
+    "medicine_type": "Ayurvedic Tonic",
+    "uses": ["Constipation", "Gas", "Acidity", "Bloating"],
+    "images": "/assets/StomachCare/abhayarishta.png",
+    "cost": 160.0,
+    "discount": 8,
+    "final_price": 147.2,
+    "manufacturer": "Baidyanath",
+    "stock": 180,
+    "rating": 4.7,
+
+    "highlights": {
+      "product_type": "Ayurvedic Digestive",
+      "pack_size": "450 ml bottle",
+      "shelf_life": "36 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "May contain natural sediment. Shake before use.",
+      "usage_instruction": "15–30 ml twice daily with water."
+    },
+
+    "brand": "Baidyanath",
+    "material_type_free": "Chemical-free",
+    "ingredients": ["Haritaki", "Musta", "Danti"],
+    "bio_friendly": "Yes",
+    "exemption_type": "Ayurvedic",
+    "net_quantity": "450 ml",
+    "weight": "450 ml",
+    "packaging_type": "Bottle",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Herbal Wellness Store",
+    "seller_address": "Main Street, Vizag",
+    "seller_license": "ELDMED2025VZG10",
+    "manufactured_by": "Baidyanath Pharma",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 92,
+    "name": "Himalaya Gasex Syrup",
+    "description": "Ayurvedic syrup for gas, bloating, and abdominal discomfort. Suitable for elder digestion support.",
+    "medicine_type": "Ayurvedic Syrup",
+    "uses": ["Gas", "Bloating", "Indigestion"],
+    "images": "/assets/StomachCare/gasex.png",
+    "cost": 95.0,
+    "discount": 5,
+    "final_price": 90.25,
+    "manufacturer": "Himalaya",
+    "stock": 300,
+    "rating": 4.6,
+
+    "highlights": {
+      "product_type": "Digestive Syrup",
+      "pack_size": "200 ml bottle",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Keep away from direct sunlight.",
+      "usage_instruction": "10 ml twice a day after meals."
+    },
+
+    "brand": "Himalaya",
+    "material_type_free": "Alcohol-free",
+    "ingredients": ["Triphala", "Cumin", "Mint"],
+    "bio_friendly": "Yes",
+    "exemption_type": "Ayurvedic",
+    "net_quantity": "200 ml",
+    "weight": "200 ml",
+    "packaging_type": "Bottle",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "AyurCare Store",
+    "seller_address": "Greenlands, Bengaluru",
+    "seller_license": "ELDMED2025BLR77",
+    "manufactured_by": "Himalaya Wellness",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 93,
+    "name": "Dabur Dashmularishta",
+    "description": "A powerful Ayurvedic tonic supporting digestion, strength, and gut health in elder adults.",
+    "medicine_type": "Ayurvedic Tonic",
+    "uses": ["Weak digestion", "Gas", "General wellness"],
+    "images": "/assets/StomachCare/dashmularishta.png",
+    "cost": 180.0,
+    "discount": 10,
+    "final_price": 162.0,
+    "manufacturer": "Dabur",
+    "stock": 210,
+    "rating": 4.6,
+
+    "highlights": {
+      "product_type": "Ayurvedic Tonic",
+      "pack_size": "450 ml",
+      "shelf_life": "36 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Contains natural herbs; taste may vary.",
+      "usage_instruction": "15 ml twice daily."
+    },
+
+    "brand": "Dabur",
+    "material_type_free": "No artificial preservatives",
+    "ingredients": ["Dashmool", "Ashwagandha", "Bala"],
+    "bio_friendly": "Yes",
+    "exemption_type": "Ayurvedic",
+    "net_quantity": "450 ml",
+    "weight": "450 ml",
+    "packaging_type": "Bottle",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "Senior Wellness Store",
+    "seller_address": "Mumbai Central",
+    "seller_license": "ELDMED2025MUM55",
+    "manufactured_by": "Dabur India",
+    "country_of_origin": "India"
+  },
+
+  {
+    "id": 94,
+    "name": "Charak Livomyn Syrup",
+    "description": "Liver-supportive digestive tonic for elders suffering from acidity, bloating, or slow digestion.",
+    "medicine_type": "Digestive Liver Tonic",
+    "uses": ["Bloating", "Acidity", "Weak digestion"],
+    "images": "/assets/StomachCare/livomyn.png",
+    "cost": 130.0,
+    "discount": 8,
+    "final_price": 119.6,
+    "manufacturer": "Charak Pharma",
+    "stock": 170,
+    "rating": 4.5,
+
+    "highlights": {
+      "product_type": "Herbal Syrup",
+      "pack_size": "200 ml",
+      "shelf_life": "24 months",
+      "country_of_origin": "India"
+    },
+
+    "information": {
+      "disclaimer": "Not recommended for severe liver diseases.",
+      "usage_instruction": "Take 15 ml twice daily."
+    },
+
+    "brand": "Charak",
+    "material_type_free": "Alcohol-free",
+    "ingredients": ["Bhringraj", "Kalmegh", "Triphala"],
+    "bio_friendly": "Yes",
+    "exemption_type": "Ayurvedic",
+    "net_quantity": "200 ml",
+    "weight": "200 ml",
+    "packaging_type": "Bottle",
+
+    "customer_support": "support@yourapp.com",
+    "seller_name": "ElderCare Pharmacy",
+    "seller_address": "Wellness Road, Chennai",
+    "seller_license": "ELDMED2025CHN33",
+    "manufactured_by": "Charak Pharma",
+    "country_of_origin": "India"
+  },
+  {
+  "id": 95,
+  "name": "Elder Digestive Tonic Plus",
+  "description": "Ayurvedic digestive tonic designed for elders to reduce bloating, acidity, and slow digestion.",
+  "medicine_type": "Ayurvedic Digestive Tonic",
+  "uses": ["Acidity", "Indigestion", "Bloating"],
+  "images": "/assets/StomachCare/digestive-tonic-plus.png",
+  "cost": 180,
+  "discount": 10,
+  "final_price": 162,
+  "manufacturer": "Himalaya",
+  "stock": 120,
+  "rating": 4.7,
+
+  "highlights": {
+    "product_type": "Herbal Liquid Tonic",
+    "pack_size": "200 ml bottle",
+    "shelf_life": "24 months",
+    "country_of_origin": "India"
+  },
+
+  "information": {
+    "disclaimer": "Consult physician if symptoms persist.",
+    "usage_instruction": "15 ml after meals twice daily."
+  },
+
+  "brand": "Himalaya Wellness",
+  "material_type_free": "Alcohol-free",
+  "ingredients": ["Triphala", "Jeera", "Pudina", "Ajwain"],
+  "bio_friendly": "Yes",
+  "exemption_type": "Ayurvedic",
+  "net_quantity": "200 ml",
+  "weight": "220g",
+  "packaging_type": "Bottle",
+
+  "customer_support": "support@yourapp.com",
+  "seller_name": "ElderCare Pharmacy",
+  "seller_address": "45 Senior Wellness Lane, Hyderabad",
+  "seller_license": "ELD2025HYD01",
+  "manufactured_by": "Himalaya Wellness",
+  "country_of_origin": "India"
+}
+
+], 
+  "ayurvedic": [
+    {
+      "id": 74,
+      "name": "Hingvashtak Churna Senior",
+      "description": "Mild Ayurvedic digestive churna for seniors to relieve indigestion, bloating and weak digestion.",
+      "medicine_type": "Ayurvedic Digestive Powder",
+      "uses": ["Indigestion", "Gas", "Bloating"],
+      "images": "/assets/StomachCare/hingvashtak-senior.png",
+      "cost": 120.0,
+      "discount": 5,
+      "final_price": 114.0,
+      "manufacturer": "Baidyanath",
+      "stock": 240,
+      "rating": 4.7,
+
+      "highlights": {
+        "product_type": "Digestive Churna",
+        "pack_size": "100g jar",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Consult physician if symptoms persist.",
+        "usage_instruction": "Take 1 teaspoon with warm water after meals."
+      },
+
+      "brand": "Baidyanath Senior",
+      "material_type_free": "Chemical-free",
+      "ingredients": ["Hing", "Jeera", "Saunf", "Ginger"],
+      "bio_friendly": "Yes",
+      "exemption_type": "Ayurvedic",
+      "net_quantity": "100g",
+      "weight": "100g",
+      "packaging_type": "Jar",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "ElderCare Pharmacy",
+      "seller_address": "11 Ayurveda Street, Hyderabad",
+      "seller_license": "ELDMED2025HYD1",
+      "manufactured_by": "Baidyanath",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 75,
+      "name": "Dashmularishta Senior Tonic",
+      "description": "Strengthening Ayurvedic tonic for seniors to improve digestion, energy and appetite.",
+      "medicine_type": "Ayurvedic Tonic",
+      "uses": ["Weak digestion", "Low appetite", "Fatigue"],
+      "images": "/assets/StomachCare/dashmool-senior.png",
+      "cost": 180.0,
+      "discount": 10,
+      "final_price": 162.0,
+      "manufacturer": "Dhootapapeshwar",
+      "stock": 200,
+      "rating": 4.6,
+
+      "highlights": {
+        "product_type": "Ayurvedic Liquid Tonic",
+        "pack_size": "450 ml bottle",
+        "shelf_life": "36 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "May contain natural sediments.",
+        "usage_instruction": "Take 15–20 ml twice daily after meals."
+      },
+
+      "brand": "Dhootapapeshwar",
+      "material_type_free": "Preservative-free",
+      "ingredients": ["Dashmool", "Bilva", "Ashwagandha"],
+      "bio_friendly": "Yes",
+      "exemption_type": "Ayurvedic",
+      "net_quantity": "450 ml",
+      "weight": "450 ml",
+      "packaging_type": "Bottle",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "ElderCare Pharmacy",
+      "seller_address": "11 Ayurveda Street, Hyderabad",
+      "seller_license": "ELDMED2025HYD1",
+      "manufactured_by": "Dhootapapeshwar",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 76,
+      "name": "Ayurvedic Gas Relief Tonic (Elder)",
+      "description": "Gentle herbal tonic to relieve gas, bloating and stomach heaviness in elders.",
+      "medicine_type": "Ayurvedic Gas Tonic",
+      "uses": ["Gas", "Stomach heaviness", "Bloating"],
+      "images": "/assets/StomachCare/gas-tonic-senior.png",
+      "cost": 135.0,
+      "discount": 5,
+      "final_price": 128.25,
+      "manufacturer": "Himalaya",
+      "stock": 180,
+      "rating": 4.5,
+
+      "highlights": {
+        "product_type": "Ayurvedic Liquid",
+        "pack_size": "200 ml bottle",
+        "shelf_life": "24 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Shake well before use.",
+        "usage_instruction": "Take 2 teaspoons after meals."
+      },
+
+      "brand": "Himalaya Senior",
+      "material_type_free": "Alcohol-free",
+      "ingredients": ["Ajwain", "Saunf", "Jeera"],
+      "bio_friendly": "Yes",
+      "exemption_type": "Ayurvedic",
+      "net_quantity": "200 ml",
+      "weight": "200 ml",
+      "packaging_type": "Bottle",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "ElderCare Pharmacy",
+      "seller_address": "11 Ayurveda Street, Hyderabad",
+      "seller_license": "ELDMED2025HYD1",
+      "manufactured_by": "Himalaya",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 77,
+      "name": "Triphala Senior Syrup",
+      "description": "Ayurvedic syrup for digestive cleansing, mild constipation and gut health in elders.",
+      "medicine_type": "Ayurvedic Syrup",
+      "uses": ["Constipation", "Digestive cleansing", "Acidity"],
+      "images": "/assets/StomachCare/triphala-senior.png",
+      "cost": 160.0,
+      "discount": 10,
+      "final_price": 144.0,
+      "manufacturer": "Patanjali",
+      "stock": 150,
+      "rating": 4.7,
+
+      "highlights": {
+        "product_type": "Ayurvedic Syrup",
+        "pack_size": "200 ml bottle",
+        "shelf_life": "18 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Consult if diabetic.",
+        "usage_instruction": "Consume 10 ml at bedtime."
+      },
+
+      "brand": "Patanjali Senior",
+      "material_type_free": "Sugar-free",
+      "ingredients": ["Triphala", "Haritaki", "Amla"],
+      "bio_friendly": "Yes",
+      "exemption_type": "Ayurvedic",
+      "net_quantity": "200 ml",
+      "weight": "200 ml",
+      "packaging_type": "Bottle",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "ElderCare Pharmacy",
+      "seller_address": "11 Ayurveda Street, Hyderabad",
+      "seller_license": "ELDMED2025HYD1",
+      "manufactured_by": "Patanjali",
+      "country_of_origin": "India"
+    },
+
+    {
+      "id": 78,
+      "name": "Liv-52 Senior Tonic",
+      "description": "Liver-supporting tonic designed for elders to improve metabolism and digestion.",
+      "medicine_type": "Ayurvedic Liver Tonic",
+      "uses": ["Weak digestion", "Liver support"],
+      "images": "/assets/StomachCare/liv52-senior.png",
+      "cost": 130.0,
+      "discount": 5,
+      "final_price": 123.5,
+      "manufacturer": "Himalaya",
+      "stock": 210,
+      "rating": 4.6,
+
+      "highlights": {
+        "product_type": "Ayurvedic Tonic",
+        "pack_size": "200 ml bottle",
+        "shelf_life": "36 months",
+        "country_of_origin": "India"
+      },
+
+      "information": {
+        "disclaimer": "Not recommended for severe liver conditions.",
+        "usage_instruction": "Take 1-2 teaspoons after meals."
+      },
+
+      "brand": "Himalaya Senior",
+      "material_type_free": "Preservative-free",
+      "ingredients": ["Kasani", "Arjuna", "Himsra"],
+      "bio_friendly": "Yes",
+      "exemption_type": "Ayurvedic",
+      "net_quantity": "200 ml",
+      "weight": "200 ml",
+      "packaging_type": "Bottle",
+
+      "customer_support": "support@yourapp.com",
+      "seller_name": "ElderCare Pharmacy",
+      "seller_address": "11 Ayurveda Street, Hyderabad",
+      "seller_license": "ELDMED2025HYD1",
+      "manufactured_by": "Himalaya",
+      "country_of_origin": "India"
+    }
+  ]
+
+  }
+}
