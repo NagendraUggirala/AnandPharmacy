@@ -31,7 +31,7 @@ export default function CategorySlider() {
   };
 
   return (
-    <div className="w-full bg-white border-b py-2 shadow-sm">
+    <div className="w-full bg-white border-b py-6 ">
 
       <div
         className="
