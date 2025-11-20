@@ -55,7 +55,7 @@ const SearchBar = () => {
       )}
 
       {/* SEARCH BAR */}
-      <form onSubmit={onSubmit} className="w-full">
+      <form onSubmit={onSubmit} className="hidden lg:block w-full lg:w-[500px]">
         <div
           className="
             flex items-center w-full
@@ -97,7 +97,7 @@ const SearchBar = () => {
               "
             >
               <FiCamera
-                className="
+                className=" 
                   text-gray-500 text-lg
                   lg:text-base
                 "

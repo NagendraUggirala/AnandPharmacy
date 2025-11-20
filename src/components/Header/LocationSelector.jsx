@@ -51,7 +51,7 @@ export default function LocationSelector() {
         <FiMapPin size={20} className="text-orange-600 lg:size-5" />
 
         {/* TEXT BLOCK */}
-        <div className="flex flex-col text-left ml-2 w-full lg:w-auto">
+        <div className=" flex-col text-left ml-2 w-full lg:w-auto hidden lg:block">
           <span className="text-[11px] text-gray-500 leading-tight">
             {displayTitle}
           </span>
@@ -62,7 +62,7 @@ export default function LocationSelector() {
         </div>
 
         {/* DROPDOWN ICON */}
-        <FiChevronDown size={18} className="ml-auto text-gray-600 lg:ml-1" />
+        <FiChevronDown size={18} className="ml-auto text-gray-600 lg:ml-1 hidden lg:block" />
       </button>
 
       {/* OPEN LOCATION MODAL */}
