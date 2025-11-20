@@ -1,151 +1,151 @@
-import React from "react"; 
-import { Routes, Route, Navigate } from "react-router-dom";
+import React, { useContext } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+  useLocation,
+} from "react-router-dom";
 
 import "./App.css";
 
-// ======================= GLOBAL COMPONENTS =======================
 import Header from "./components/Header/Header";
+import CategorySlider from "./components/Header/CategorySlider";
+import BackButton from "./components/Header/BackButton";
 import PageLoader from "./components/Layout/PageLoader";
 
-// ======================= CONTEXT =======================
 import { AuthContext } from "./context/AuthContext";
 
-// ======================= PAGES =======================
+// Pages
 import Home from "./pages/Home";
-
 import Login from "./pages/Auth/Login";
 import OtpVerify from "./pages/Auth/OtpVerify";
-
-import ProductDetail from "./pages/ProductDetail/ProductDetail";
-
+import ProductDetail from "./pages/ProductDetail";
 import CartPage from "./pages/CartPage";
 import Checkout from "./pages/Checkout/Checkout";
 import PaymentPage from "./pages/Checkout/PaymentPage";
-
 import OrderTracking from "./pages/Orders/OrderTracking";
 import DeliveryMap from "./pages/Orders/DeliveryMap";
-
 import Profile from "./pages/Profile/Profile";
 import AddressManager from "./pages/Profile/AddressManager";
-import Babycare from "./components/Medical/Babycare";
 
-// ====================================================================
-// 🔐 PROTECTED ROUTE WRAPPER
-// ====================================================================
+// Protected Route
 const ProtectedRoute = ({ children }) => {
   const { user } = useContext(AuthContext);
   const location = useLocation();
-  const { user } = useContext(AuthContext);
-  const location = useLocation();
-
-  // not logged in → redirect to login
-  if (!user) {
-    return <Navigate to="/login" replace state={{ from: location }} />;
-  }
-
+  if (!user) return <Navigate to="/login" replace state={{ from: location }} />;
   return children;
 };
 
-// ====================================================================
-// 🌐 MAIN APP
-// ====================================================================
+// ================== NEW WRAPPER TO HANDLE UI CONDITION ==================
+const LayoutController = ({ children }) => {
+  const location = useLocation();
+
+  const isProductDetailPage = location.pathname.startsWith("/ProductDetail");
+
+  return (
+    <>
+      <Header />
+
+      {/* Show BACK BUTTON on ProductDetail page */}
+      {isProductDetailPage ? (
+        <BackButton />
+      ) : (
+        <CategorySlider />
+      )}
+
+      <PageLoader />
+
+      {children}
+    </>
+  );
+};
+
+// ================= MAIN APP ===================
 const App = () => {
   return (
-    <div className="home-wrapper pt-[150px] lg:pt-[120px]">
-      <div className="home-content px-4 py-6 lg:py-10">
+    <Router>
+      <LayoutController>
         <Routes>
+          {/* Home */}
+          <Route path="/" element={<Navigate to="/home" replace />} />
+          <Route path="/home/*" element={<Home />} />
 
-          <Route path="/" element={<Navigate to="all" replace />} />
+          {/* Product Detail */}
+          <Route path="/ProductDetail/*" element={<ProductDetail />} />
 
-        {/* Home Main Route */}
-        <Route path="/home/*" element={<Home />} />
+          {/* Cart */}
+          <Route path="/cart" element={<CartPage />} />
 
+          {/* Checkout */}
+          <Route
+            path="/checkout"
+            element={
+              <ProtectedRoute>
+                <Checkout />
+              </ProtectedRoute>
+            }
+          />
 
-        {/* PRODUCT LIST + DETAILS */}
-        <Route path="/products" element={<ProductList />} />
-        <Route path="/product/:id" element={<ProductDetail />} />
+          {/* Payment */}
+          <Route
+            path="/payment"
+            element={
+              <ProtectedRoute>
+                <PaymentPage />
+              </ProtectedRoute>
+            }
+          />
 
-        {/* CART (login required) */}
-        <Route path="/cart" element={<CartPage />} />
+          {/* Orders */}
+          <Route
+            path="/order-tracking/:id"
+            element={
+              <ProtectedRoute>
+                <OrderTracking />
+              </ProtectedRoute>
+            }
+          />
 
+          <Route
+            path="/delivery-map/:id"
+            element={
+              <ProtectedRoute>
+                <DeliveryMap />
+              </ProtectedRoute>
+            }
+          />
 
-        {/* CHECKOUT */}
-        <Route
-          path="/checkout"
-          element={
-            <ProtectedRoute>
-              <Checkout />
-            </ProtectedRoute>
-          }
-        />
+          {/* Profile */}
+          <Route
+            path="/profile"
+            element={
+              <ProtectedRoute>
+                <Profile />
+              </ProtectedRoute>
+            }
+          />
 
-        {/* PAYMENT PAGE */}
-        <Route
-          path="/payment"
-          element={
-            <ProtectedRoute>
-              <PaymentPage />
-            </ProtectedRoute>
-          }
-        />
-        
+          {/* Address */}
+          <Route
+            path="/addresses"
+            element={
+              <ProtectedRoute>
+                <AddressManager />
+              </ProtectedRoute>
+            }
+          />
 
-        {/* ORDER TRACKING */}
-        <Route
-          path="/order-tracking/:id"
-          element={
-            <ProtectedRoute>
-              <OrderTracking />
-            </ProtectedRoute>
-          }
-        />
+          {/* Auth */}
+          <Route path="/login/*" element={<Login />} />
+          <Route path="/otp-verify" element={<OtpVerify />} />
 
-        {/* LIVE MAP TRACKING */}
-        <Route
-          path="/delivery-map/:id"
-          element={
-            <ProtectedRoute>
-              <DeliveryMap />
-            </ProtectedRoute>
-          }
-        />
-
-        {/* PROFILE */}
-        <Route
-          path="/profile"
-          element={
-            <ProtectedRoute>
-              <Profile />
-            </ProtectedRoute>
-          }
-        />
-
-        {/* ADDRESS MANAGER */}
-        <Route
-          path="/babycare"
-          element={
-          
-              <Babycare />
-            
-          }
-        />
-<Route
-          path="/addresses"
-          element={
-            <ProtectedRoute>
-              <AddressManager />
-            </ProtectedRoute>
-          }
-        />
-        {/* LOGIN + OTP */}
-        <Route path="/login/*" element={<Login />} />
-        <Route path="/otp-verify" element={<OtpVerify />} />
-
-        {/* WRONG ROUTE -> BACK TO HOME */}
-        <Route path="*" element={<Navigate to="/" />} />
-      </Routes>
+          {/* Redirect wrong routes */}
+          <Route path="*" element={<Navigate to="/home" />} />
+        </Routes>
+      </LayoutController>
     </Router>
   );
-}
+};
 
 export default App;
